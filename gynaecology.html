@@ -167,8 +167,41 @@
       [style*="padding:52px 60px"]{padding:36px 20px!important;}
 
       /* Overview grid gap tighten */
-      div[style*="gap:80px"]{gap:32px!important;}
-      div[style*="gap:60px"]{gap:28px!important;}
+      div[style*="gap:80px"]{gap:24px!important;}
+      div[style*="gap:72px"]{gap:24px!important;}
+      div[style*="gap:64px"]{gap:24px!important;}
+      div[style*="gap:60px"]{gap:24px!important;}
+
+      /* Gold banner legacy stack fix (single column) */
+      [style*="background:#B8965A"]>div>div{width:100%!important;}
+
+      /* Name banner (burgundy) — tighten for narrow mobile */
+      .name-banner>div{height:auto!important;padding:14px 14px!important;}
+      .name-banner span{font-size:7px!important;letter-spacing:0.18em!important;line-height:1.5!important;text-align:center!important;word-break:break-word!important;}
+
+      /* HERO — tighten overlay padding and h1 */
+      section[style*="height:520px"] > div[style*="padding:0 40px"],
+      section[style*="height:460px"] > div[style*="padding:0 40px"],
+      section[style*="height:640px"] > div[style*="padding:0 40px"]{padding:0 20px!important;}
+      section[style*="height:520px"] h1,
+      section[style*="height:460px"] h1,
+      section[style*="height:640px"] h1{font-size:32px!important;line-height:1.15!important;}
+      section[style*="height:520px"] p,
+      section[style*="height:460px"] p,
+      section[style*="height:640px"] p{font-size:12px!important;}
+
+      /* Overview grid — stack sidebar below main content */
+      div[style*="grid-template-columns:1fr 320px"],
+      div[style*="grid-template-columns:1fr 300px"],
+      div[style*="grid-template-columns:1fr 280px"]{grid-template-columns:1fr!important;gap:32px!important;}
+
+      /* CTA buttons — stack and center */
+      section[style*="background:#6B1E2E"] div[style*="display:flex"][style*="justify-content:center"]{flex-direction:column!important;gap:14px!important;align-items:center!important;}
+      section[style*="background:#6B1E2E"] .btn-gold{width:100%!important;max-width:280px!important;text-align:center!important;}
+
+      /* Stats/credentials strip on burgundy */
+      div[style*="background:#541727"][style*="display:flex"]{flex-wrap:wrap!important;}
+      div[style*="background:#541727"][style*="display:flex"]>div{width:100%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.15)!important;}
     }
   </style>
 </head>
@@ -228,7 +261,7 @@
   </section>
 
   <!-- NAME BANNER -->
-  <div style="background:#B8965A; padding:0;">
+  <div class="name-banner" style="background:#541727; padding:0;">
     <div style="max-width:1400px; margin:0 auto; padding:0 60px; display:flex; align-items:center; justify-content:center; height:52px;">
       <span style="font-size:8px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:#fff;">GYNAECOLOGY &middot; KOKILABEN DHIRUBHAI AMBANI HOSPITAL, MUMBAI</span>
     </div>
