@@ -246,13 +246,42 @@
       .accordion-btn{padding:18px 16px!important;}
 
       /* index.html specific */
-      .profile-flex{flex-direction:column!important;}
-      .profile-photo{width:100%!important;height:240px!important;}
-      /* Hero absolute-positioned stats bar */
-      div[style*="position:absolute;bottom:0"]{position:relative!important;margin-top:0!important;}
-      /* Name banner */
-      [style*="padding:24px 60px"]{padding:20px!important;}
-      [style*="font-size:21px"][style*="letter-spacing:0.38em"]{font-size:14px!important;letter-spacing:0.22em!important;}
+      .profile-flex{flex-direction:column!important;gap:28px!important;}
+      .profile-photo{width:100%!important;height:360px!important;}
+      .profile-photo img{object-position:center 20% !important;}
+
+      /* Hero: convert stats bar from absolute → static flow */
+      section[style*="height:640px"]{padding-bottom:0!important;}
+      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"]{position:static!important;margin-top:24px!important;background:rgba(42,13,21,0.85)!important;backdrop-filter:none!important;}
+      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"] > div{flex-wrap:wrap!important;gap:0!important;}
+      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"] > div > div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.08)!important;padding:14px 10px!important;}
+      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"] > div > div:nth-child(even){border-left:1px solid rgba(255,255,255,0.08)!important;}
+      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"] [style*="font-size:18px"]{font-size:13px!important;}
+
+      /* Hero CTA buttons: stack vertically */
+      section[style*="height:640px"] .btn-gold{display:block!important;margin:0 auto 12px!important;width:100%!important;max-width:260px!important;text-align:center!important;}
+      section[style*="height:640px"] a[href*="consultation"]{display:inline-block!important;margin-top:8px!important;}
+
+      /* Name banner: smaller fonts, tighter spacing */
+      [style*="padding:24px 60px"]{padding:18px 14px!important;}
+      [style*="font-size:21px"][style*="letter-spacing:0.38em"]{font-size:12px!important;letter-spacing:0.18em!important;}
+      [style*="padding:24px 60px"] [style*="font-size:8px"]{font-size:7px!important;letter-spacing:0.08em!important;line-height:1.5!important;}
+
+      /* Credentials strip: wrap items, drop borders, compact */
+      [style*="padding:18px 60px"]{padding:16px 12px!important;}
+      [style*="padding:18px 60px"] > div{gap:10px 14px!important;}
+      [style*="padding:18px 60px"] > div > div{padding:4px 8px!important;border-right:none!important;min-width:auto!important;}
+      [style*="padding:18px 60px"] > div > div > div:first-child{font-size:7px!important;letter-spacing:0.08em!important;}
+      [style*="padding:18px 60px"] > div > div > div:last-child{font-size:7px!important;}
+
+      /* Credential badge grid: 2 cols instead of 6 */
+      .cred-badge{padding:6px 8px!important;}
+      div[style*="grid-template-columns:repeat(6,1fr)"]{grid-template-columns:repeat(2,1fr)!important;gap:6px!important;}
+
+      /* Stats strip (burgundy): stack all 3 at full width */
+      [style*="background:#541727"]>div{flex-wrap:wrap!important;}
+      [style*="background:#541727"]>div>div{width:100%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.15)!important;padding:22px 16px!important;}
+      [style*="background:#541727"]>div>div:last-child{border-bottom:none!important;}
     }
   </style>
 </head>
@@ -465,9 +494,9 @@
 
       <!-- PANEL 2: GYNAECOLOGY -->
       <div class="proc-panel" style="height:520px;" onclick="window.location='gynaecology.html'" data-anim="up" class="d2">
-        <img src="https://drvaishalijoshi.com/gynae-anatomy.svg"
-             onerror="this.onerror=null;this.src='gynae-anatomy.svg'"
-             alt="Gynaecology & Reproductive Anatomy">
+        <img src="https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=700&h=620&fit=crop&crop=center&auto=format&q=80"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1579684453423-f84349ef60b0?w=700&h=620&fit=crop&crop=center&auto=format&q=80'"
+             alt="Gynaecology & Women's Health">
         <div class="proc-gradient"></div>
         <div class="proc-default-label">
           <span style="font-size:11px;font-weight:600;letter-spacing:0.38em;color:#fff;text-transform:uppercase;display:block;margin-bottom:4px;">Gynaecology</span>
