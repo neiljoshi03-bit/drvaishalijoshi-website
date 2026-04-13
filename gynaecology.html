@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Vaishali Joshi - Gynaecology &amp; Advanced Surgery | Mumbai | Kokilaben Hospital</title>
+  <meta name="description" content="Dr. Vaishali Joshi specialises in laparoscopic hysterectomy, PCOS, fibroids, colposcopy, endometriosis and women's health at Kokilaben Hospital Mumbai." />
+  <link rel="canonical" href="https://drvaishalijoshi.com/gynaecology.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; font-weight: 200; color: #1A1A1A; line-height: 1.75; overflow-x: hidden; background: #FDFAF6; }
+    #site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.35s ease, box-shadow 0.35s ease; background: transparent; }
+    #site-header.scrolled { background: rgba(35,8,16,0.96); backdrop-filter: blur(12px); box-shadow: 0 1px 24px rgba(0,0,0,0.18); }
+    #menu-overlay { position:fixed; inset:0; background:rgba(30,8,16,0.98); z-index:200; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.35s ease; }
+    #menu-overlay.open { opacity:1; pointer-events:all; }
+    .menu-link { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; color:rgba(255,255,255,0.85); text-decoration:none; display:block; padding:6px 0; letter-spacing:0.04em; transition:color 0.2s; }
+    .menu-link:hover { color:#C4848E; }
+    .menu-link.active { color:#C4848E; }
+    .section-label { font-size:9px; font-weight:500; letter-spacing:0.28em; text-transform:uppercase; color:#9E6B72; }
+    .divider { width:40px; height:1px; background:#9E6B72; margin:0 auto; }
+    .btn-gold { background-color:#6B1E2E; color:#fff; font-size:9px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; padding:13px 30px; display:inline-block; text-decoration:none; transition:background 0.2s; }
+    .btn-gold:hover { background-color:#541727; }
+    .tag { display:inline-block; font-size:8px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; padding:4px 10px; border:1px solid #6B1E2E; color:#6B1E2E; margin-bottom:16px; }
+    .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:28px; }
+    .info-box { background:#FDFAF6; border:1px solid #EDD8DC; border-left:3px solid #6B1E2E; padding:20px 22px; }
+    .info-box h4 { font-size:8px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:#6B1E2E; margin-bottom:8px; }
+    .info-box p { font-size:12px; font-weight:300; color:#555; line-height:1.85; margin:0; }
+    .procedure-section { border-top:1px solid #EDD8DC; }
+    .sub-nav a { font-size:10px; font-weight:400; letter-spacing:0.12em; color:#555; text-decoration:none; padding:8px 0; display:block; border-bottom:1px solid #EDD8DC; transition:color 0.2s; }
+    .sub-nav a:hover { color:#6B1E2E; }
+    [data-anim]{opacity:0;transition:opacity 0.75s ease,transform 0.75s ease;}
+    [data-anim="up"]{transform:translateY(32px);}
+    [data-anim="left"]{transform:translateX(-36px);}
+    [data-anim="right"]{transform:translateX(36px);}
+    [data-anim="scale"]{transform:scale(0.96);}
+    [data-anim].in{opacity:1;transform:none;}
+    .d1{transition-delay:0.12s!important;}.d2{transition-delay:0.22s!important;}.d3{transition-delay:0.34s!important;}.d4{transition-delay:0.46s!important;}
+    #hamburger{display:none;}
+    @media(max-width:768px){
+      /* Header */
+      #site-header>div{padding:14px 20px!important;}
+      #site-header nav{display:none!important;}
+      #hamburger{display:flex!important;}
+
+      /* Overflow */
+      body{overflow-x:hidden;}
+
+      /* General section padding */
+      [style*="padding:80px 60px"]{padding:48px 20px!important;}
+      [style*="padding:72px 60px"]{padding:48px 20px!important;}
+      [style*="padding:64px 60px"]{padding:40px 20px!important;}
+      [style*="padding:60px 60px"]{padding:40px 20px!important;}
+      [style*="padding:56px 60px"]{padding:36px 20px!important;}
+      [style*="padding:48px 60px"]{padding:36px 20px!important;}
+      [style*="padding:40px 60px"]{padding:32px 20px!important;}
+      [style*="padding:0 60px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="padding:80px 48px"]{padding:48px 20px!important;}
+      [style*="padding:72px 48px"]{padding:48px 20px!important;}
+      [style*="padding:64px 48px"]{padding:40px 20px!important;}
+      [style*="padding:60px 48px"]{padding:40px 20px!important;}
+      [style*="padding:0 48px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="padding:0 40px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="max-width:1200px"]{padding-left:20px!important;padding-right:20px!important;}
+
+      /* Grids */
+      div[style*="grid-template-columns"],section[style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:20px!important;}
+      .info-grid{grid-template-columns:1fr!important;}
+
+      /* Typography scaling */
+      [style*="font-size:72px"]{font-size:36px!important;line-height:1.1!important;}
+      [style*="font-size:64px"]{font-size:32px!important;line-height:1.1!important;}
+      [style*="font-size:60px"]{font-size:30px!important;line-height:1.1!important;}
+      [style*="font-size:58px"]{font-size:28px!important;line-height:1.15!important;}
+      [style*="font-size:56px"]{font-size:28px!important;line-height:1.15!important;}
+      [style*="font-size:52px"]{font-size:26px!important;line-height:1.2!important;}
+      [style*="font-size:48px"]{font-size:24px!important;}
+      [style*="font-size:44px"]{font-size:22px!important;}
+      [style*="font-size:40px"]{font-size:22px!important;}
+      [style*="font-size:38px"]{font-size:20px!important;}
+      [style*="font-size:36px"]{font-size:20px!important;}
+
+      /* Hero sections */
+      section[style*="height:640px"]{height:auto!important;min-height:380px!important;padding-top:100px!important;padding-bottom:80px!important;}
+      section[style*="height:520px"]{height:auto!important;min-height:340px!important;padding-top:100px!important;padding-bottom:60px!important;}
+      section[style*="height:460px"]{height:auto!important;min-height:320px!important;padding-top:100px!important;padding-bottom:60px!important;}
+      section[style*="height:400px"]{height:auto!important;min-height:280px!important;padding-top:100px!important;padding-bottom:48px!important;}
+      section[style*="height:380px"]{height:auto!important;min-height:260px!important;padding-top:100px!important;padding-bottom:48px!important;}
+
+      /* Proc panels */
+      .proc-panel{height:240px!important;}
+
+      /* Sidebar widths */
+      div[style*="width:320px"]{width:100%!important;}
+      div[style*="width:300px"]{width:100%!important;}
+
+      /* Stats/gold strip */
+      [style*="background:#B8965A"]>div{flex-wrap:wrap!important;}
+      [style*="background:#B8965A"]>div>div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.2)!important;padding:16px 12px!important;}
+
+      /* Dark stats panels with flex children */
+      div[style*="background:#2A0D15"]>div[style*="display:flex"]{flex-wrap:wrap!important;}
+
+      /* Why cards grid */
+      .why-grid{grid-template-columns:1fr!important;}
+
+      /* Timeline */
+      .timeline-entry{grid-template-columns:1fr!important;}
+      .timeline-left{text-align:left!important;padding-right:0!important;padding-left:28px!important;}
+      .timeline-right{padding-left:28px!important;}
+      .timeline-line{left:8px!important;}
+      .timeline-dot{left:8px!important;}
+
+      /* Testimonials */
+      .testi-grid{grid-template-columns:1fr!important;}
+      .testi-inner{padding:32px 24px!important;}
+
+      /* Procedure section vertical padding */
+      section[style*="padding:72px 0"]{padding:48px 0!important;}
+      section[style*="padding:64px 0"]{padding:40px 0!important;}
+      section[style*="padding:56px 0"]{padding:36px 0!important;}
+
+      /* Footer */
+      footer{flex-direction:column!important;gap:20px!important;padding:32px 20px!important;text-align:center!important;}
+      footer>div>div.flex{flex-direction:column!important;gap:20px!important;}
+      footer [style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:16px!important;}
+      footer>div:last-child{margin-top:8px!important;}
+
+      /* Forms */
+      form [style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:0!important;}
+      .form-field{width:100%!important;}
+
+      /* Step items */
+      .step-item{padding-left:52px!important;}
+
+      /* Tip cards */
+      .tip-card{padding:28px 24px!important;}
+
+      /* Info boxes */
+      .info-box{padding:18px 16px!important;}
+
+      /* Accordion */
+      .accordion-btn{padding:18px 16px!important;}
+
+      /* Flex layouts stacking */
+      div[style*="display:flex"][style*="gap"]{flex-wrap:wrap!important;}
+
+      /* CTA section buttons */
+      section[style*="background:#6B1E2E"] div[style*="display:flex"]{flex-direction:column!important;gap:16px!important;}
+
+      /* gynaecology.html specific */
+      aside[style*="width:260px"],aside[style*="width:280px"],div[style*="width:260px"],div[style*="width:280px"]{display:none!important;}
+      main[style*="flex:1"],div[style*="flex:1"]{width:100%!important;}
+      [style*="padding:56px 60px"]{padding:36px 20px!important;}
+      [style*="padding:52px 60px"]{padding:36px 20px!important;}
+
+      /* Overview grid gap tighten */
+      div[style*="gap:80px"]{gap:32px!important;}
+      div[style*="gap:60px"]{gap:28px!important;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENU OVERLAY -->
+  <div id="menu-overlay">
+    <button onclick="closeMenu()" aria-label="Close menu" style="position:absolute;top:28px;right:36px;background:none;border:none;cursor:pointer;padding:8px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="index.html" class="menu-link">Home</a>
+    <a href="about.html" class="menu-link">About</a>
+    <a href="obstetrics.html" class="menu-link">Obstetrics</a>
+    <a href="gynaecology.html" class="menu-link active">Gynaecology</a>
+    <a href="laparoscopic.html" class="menu-link">Laparoscopic Surgery</a>
+    <a href="patient-info.html" class="menu-link">Patient Information</a>
+    <a href="health-tips.html" class="menu-link">Health Tips</a>
+    <a href="testimonials.html" class="menu-link">Testimonials</a>
+    <a href="consultation.html" class="menu-link">Book Consultation</a>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header id="site-header">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 48px;">
+      <a href="index.html" style="text-decoration:none;">
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.26em;color:#fff;text-transform:uppercase;line-height:1.3;">DR. VAISHALI JOSHI</div>
+        <div style="font-size:7px;font-weight:300;letter-spacing:0.22em;color:rgba(255,255,255,0.65);text-transform:uppercase;margin-top:2px;">FRCOG · CCT · MD · DNB · DGO · FCPS</div>
+      </a>
+      <nav style="display:flex;gap:28px;align-items:center;">
+        <a href="index.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Home</a>
+        <a href="about.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">About</a>
+        <a href="obstetrics.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Obstetrics</a>
+        <a href="gynaecology.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:#fff;text-decoration:none;text-transform:uppercase;transition:color 0.2s;" class="nav-active">Gynaecology</a>
+        <a href="laparoscopic.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Laparoscopic Surgery</a>
+        <a href="patient-info.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Patient Information</a>
+        <a href="health-tips.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Health Tips</a>
+        <a href="testimonials.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Testimonials</a>
+        <a href="consultation.html" class="btn-gold" style="font-size:7px;padding:10px 20px;">Book Consultation</a>
+      </nav>
+      <button onclick="openMenu()" style="background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;" id="hamburger">
+        <span style="display:block;width:22px;height:1px;background:#fff;"></span>
+        <span style="display:block;width:22px;height:1px;background:#fff;"></span>
+        <span style="display:block;width:14px;height:1px;background:#fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative" style="height:520px; background:linear-gradient(135deg, #6B1E2E 0%, #2A0D15 60%, #1A0A0F 100%); display:flex; align-items:center; justify-content:center; text-align:center; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:rgba(35,8,16,0.35);"></div>
+    <div style="position:relative; z-index:2; padding:0 40px;" data-anim="up">
+      <div style="font-size:9px; font-weight:500; letter-spacing:0.32em; text-transform:uppercase; color:rgba(255,255,255,0.65); margin-bottom:20px;">Dr. Vaishali Joshi &middot; Kokilaben Dhirubhai Ambani Hospital</div>
+      <h1 style="font-family:'Cormorant Garamond',serif; font-size:58px; font-weight:300; color:#fff; letter-spacing:0.03em; line-height:1.1; margin:0 0 24px;">Gynaecology &amp; Advanced Surgery</h1>
+      <div style="width:48px; height:1px; background:rgba(255,255,255,0.4); margin:0 auto 24px;"></div>
+      <p style="font-size:13px; font-weight:300; color:rgba(255,255,255,0.75); max-width:600px; margin:0 auto; letter-spacing:0.04em;">Comprehensive gynaecological care — from PCOS and fibroids to advanced laparoscopic surgery, colposcopy, and menopause management.</p>
+    </div>
+  </section>
+
+  <!-- NAME BANNER -->
+  <div style="background:#B8965A; padding:0;">
+    <div style="max-width:1400px; margin:0 auto; padding:0 60px; display:flex; align-items:center; justify-content:center; height:52px;">
+      <span style="font-size:8px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:#fff;">GYNAECOLOGY &middot; KOKILABEN DHIRUBHAI AMBANI HOSPITAL, MUMBAI</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW + QUICK NAV -->
+  <section style="background:#FDFAF6;">
+    <div style="max-width:1200px; margin:0 auto; padding:72px 60px; display:grid; grid-template-columns:1fr 320px; gap:80px; align-items:start;">
+      <!-- Left: Overview -->
+      <div data-anim="left">
+        <div class="section-label" style="margin-bottom:16px;">OVERVIEW</div>
+        <div class="divider" style="margin:0 0 32px 0;"></div>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 24px;">Gynaecological Care &amp; Advanced Surgery</h2>
+        <p style="font-size:13px; font-weight:300; color:#444; margin:0 0 18px; line-height:1.85;">Dr. Joshi provides comprehensive gynaecological care for women at every stage of life. Her practice addresses a wide range of common gynaecological conditions including Polycystic Ovary Syndrome (PCOS), difficulty conceiving and subfertility, ovarian cysts, irregular or problematic periods, and uterine fibroids — offering both medical and surgical management tailored to each patient's individual needs and goals.</p>
+        <p style="font-size:13px; font-weight:300; color:#444; margin:0 0 18px; line-height:1.85;">Gynaecology encompasses the diagnosis and treatment of conditions affecting the female reproductive system. Dr. Vaishali Joshi provides comprehensive gynaecological care across the full range of benign gynaecological conditions — from common problems such as PCOS and fibroids to complex surgical conditions requiring advanced laparoscopic techniques.</p>
+        <p style="font-size:13px; font-weight:300; color:#444; margin:0; line-height:1.85;">Her particular expertise includes advanced laparoscopic and hysteroscopic surgery, management of pre-cancerous cervical lesions through BSCCP-accredited colposcopy, and the comprehensive management of menopause and women's health.</p>
+      </div>
+      <!-- Right: Quick Nav -->
+      <div style="padding-top:8px;" data-anim="right">
+        <div style="font-size:8px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:#6B1E2E; margin-bottom:14px;">Conditions &amp; Procedures on This Page</div>
+        <nav class="sub-nav">
+          <a href="#pcos">PCOS</a>
+          <a href="#fibroids">Uterine Fibroids</a>
+          <a href="#ovarian-cysts">Ovarian Cysts</a>
+          <a href="#endometriosis">Endometriosis</a>
+          <a href="#colposcopy">Colposcopy &amp; Pre-cancerous Lesions</a>
+          <a href="#menopause">Menopause &amp; Women's Health</a>
+          <a href="#pelvic-floor">Pelvic Floor</a>
+          <a href="#surgery">Surgical Procedures</a>
+        </nav>
+        <!-- Dark CTA box -->
+        <div style="background:#6B1E2E; padding:24px 20px; text-align:center; margin-top:28px;">
+          <div style="font-size:8px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:10px;">Book a Consultation</div>
+          <a href="tel:+912242696969" style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:400; color:#fff; text-decoration:none; display:block; margin-bottom:10px;">+91 22 4269 6969</a>
+          <div style="font-size:8px; font-weight:300; color:rgba(255,255,255,0.6); letter-spacing:0.1em;">Kokilaben Dhirubhai Ambani Hospital</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: PCOS -->
+  <section id="pcos" class="procedure-section" style="background:#FDFAF6; padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">PCOS &middot; Polycystic Ovary Syndrome</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">PCOS — Polycystic Ovary Syndrome</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Polycystic ovary syndrome (PCOS) is one of the most common hormonal disorders affecting women of reproductive age. It is characterised by irregular periods, elevated androgen levels, and polycystic ovaries on ultrasound. PCOS has wide-ranging effects including fertility problems, metabolic complications, and psychological impact. Dr. Joshi's PCOS Clinic provides comprehensive personalised management.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Who Is Affected</h4>
+          <p>PCOS affects approximately 1 in 10 women of reproductive age. Women with a family history of PCOS, irregular periods, or difficulty conceiving should seek specialist assessment.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>Symptoms &amp; Diagnosis</h4>
+          <p>Irregular or absent periods, excess facial or body hair (hirsutism), acne, weight gain, and difficulty conceiving. Diagnosis is confirmed by blood tests (LH, FSH, androgens, AMH) and pelvic ultrasound.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Medical Management</h4>
+          <p>Management depends on presenting symptoms and whether fertility is desired. Options include oral contraceptive pill for cycle regulation, anti-androgen medication, insulin-sensitising medication (Metformin), and targeted lifestyle modification.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Fertility &amp; Surgical Options</h4>
+          <p>For women with PCOS who wish to conceive and have not responded to medical management, laparoscopic ovarian drilling (LOD) — a minimally invasive surgical procedure — can restore ovulation in many cases. Dr. Joshi will advise on the most appropriate option at consultation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: FIBROIDS -->
+  <section id="fibroids" class="procedure-section" style="padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Uterine Fibroids &middot; Medical &amp; Surgical Management</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Uterine Fibroids</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Uterine fibroids are benign (non-cancerous) growths of the muscle wall of the uterus. They are extremely common — affecting up to 70% of women by the age of 50 — though not all fibroids cause symptoms. When they do, fibroids can cause heavy periods, pelvic pain, pressure symptoms, and fertility problems.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Types of Fibroids</h4>
+          <p>Fibroids are classified by their position: submucosal (within the uterine cavity — most likely to cause heavy bleeding), intramural (within the uterine wall), and subserosal (on the outer surface of the uterus). The location and size determine the most appropriate treatment.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>Symptoms</h4>
+          <p>Heavy menstrual bleeding, prolonged periods, pelvic pressure or pain, urinary frequency, constipation, and — depending on location — difficulty conceiving or recurrent pregnancy loss.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Medical Management</h4>
+          <p>Medical management options include tranexamic acid and NSAIDs for heavy bleeding, hormonal therapies, and GnRH analogues to temporarily shrink fibroids before surgery.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Surgical Options</h4>
+          <p>Hysteroscopic fibroid removal (TCRF) for submucosal fibroids. Laparoscopic myomectomy for intramural or subserosal fibroids in women wishing to preserve fertility. Hysterectomy for women who have completed their family and have troublesome symptoms. The most appropriate approach will be discussed at consultation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: OVARIAN CYSTS -->
+  <section id="ovarian-cysts" class="procedure-section" style="background:#FDFAF6; padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Ovarian Cysts &middot; Assessment &amp; Treatment</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Ovarian Cysts</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Ovarian cysts are fluid-filled sacs that develop on or within the ovary. Most ovarian cysts are benign and resolve spontaneously, but some require surgical management. Dr. Joshi uses a systematic approach — including ultrasound assessment, tumour markers, and risk of malignancy scoring — to determine which cysts require intervention.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Types</h4>
+          <p>Functional cysts (most common, often resolve without treatment), endometriomas (chocolate cysts associated with endometriosis), dermoid cysts (teratomas), and simple serous cysts. The nature of the cyst guides management.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>When Treatment Is Needed</h4>
+          <p>Treatment is recommended when a cyst is large (&gt;5cm), causing symptoms (pain, bloating), persisting over multiple menstrual cycles, or has features on ultrasound that warrant further assessment or removal.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Laparoscopic Cystectomy</h4>
+          <p>Laparoscopic ovarian cystectomy — keyhole removal of the cyst while preserving the ovary — is the preferred surgical approach. In most cases Dr. Joshi performs this procedure through small incisions, resulting in minimal scarring and fast recovery.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Recovery</h4>
+          <p>Most patients are discharged within 1 day and return to normal activities within 1–2 weeks. The ovary is preserved wherever clinically possible to protect fertility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: ENDOMETRIOSIS -->
+  <section id="endometriosis" class="procedure-section" style="padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Endometriosis &middot; Specialist Management</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Endometriosis</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Endometriosis is a condition in which tissue similar to the lining of the uterus grows outside the uterus — most commonly on the ovaries, fallopian tubes, and pelvic lining. It affects approximately 1 in 10 women and is one of the leading causes of chronic pelvic pain and subfertility.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Symptoms</h4>
+          <p>Chronic pelvic pain (particularly around menstruation), painful intercourse (dyspareunia), painful periods (dysmenorrhoea), heavy bleeding, and difficulty conceiving.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>Diagnosis</h4>
+          <p>Definitive diagnosis requires laparoscopy. Ultrasound can identify endometriomas but cannot detect all forms of endometriosis. Dr. Joshi will review your symptoms, examine you, and discuss whether diagnostic laparoscopy is appropriate.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Medical Management</h4>
+          <p>Hormonal therapies (combined pill, progestogen-only, GnRH analogues) can suppress endometriosis and reduce pain. Medical management is appropriate for women not immediately planning pregnancy.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Surgical Treatment</h4>
+          <p>Laparoscopic surgical treatment — excision or ablation of endometriotic deposits — can significantly reduce pain and improve fertility. Dr. Joshi's advanced laparoscopic skills and European Diploma in Gynaecological Endoscopy make her particularly experienced in surgical management of endometriosis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: COLPOSCOPY -->
+  <section id="colposcopy" class="procedure-section" style="background:#FDFAF6; padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Colposcopy &middot; BSCCP Accredited</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Colposcopy &amp; Pre-cancerous Cervical Lesions</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Dr. Joshi holds BSCCP accreditation — the British Society for Colposcopy and Cervical Pathology standard — for the diagnosis and treatment of pre-cancerous conditions of the cervix, vagina, and vulva. Colposcopy is a detailed examination of the cervix performed after an abnormal smear test result. It is not painful and is performed as an outpatient procedure.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>What Is Colposcopy</h4>
+          <p>Colposcopy uses a colposcope — a magnifying instrument — to examine the cervix in detail. A mild solution is applied to highlight abnormal cells. The procedure takes approximately 15–20 minutes and is performed without general anaesthesia.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>What Happens</h4>
+          <p>A speculum is inserted, the colposcope is positioned outside the body to examine the cervix, and acetic acid or iodine solution is applied. If abnormal areas are identified, a small biopsy may be taken for histological analysis.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Conditions Treated</h4>
+          <p>CIN (cervical intraepithelial neoplasia) grades I–III, VAIN (vaginal intraepithelial neoplasia), VIN (vulval intraepithelial neoplasia), and HPV-related abnormalities. Treatment is tailored to the grade and extent of abnormality found.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Treatment Options</h4>
+          <p>LLETZ (large loop excision of the transformation zone) is the most common treatment for CIN II and III — a brief outpatient procedure performed under local anaesthetic that removes the abnormal tissue and provides a specimen for histology. Dr. Joshi will discuss all options with you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: MENOPAUSE -->
+  <section id="menopause" class="procedure-section" style="padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Menopause &middot; Women's Health Clinic</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Menopause &amp; Women's Health</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Menopause marks the end of menstrual cycles and typically occurs between the ages of 45 and 55. The transition — perimenopause — can begin several years before the final period and is associated with a range of symptoms that significantly affect quality of life. Dr. Joshi's Menopause Clinic offers comprehensive management tailored to each patient's symptoms and medical history.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Symptoms</h4>
+          <p>Hot flushes, night sweats, mood changes, sleep disturbance, vaginal dryness, reduced libido, joint pain, and cognitive changes. Not all women experience all symptoms — individual assessment is essential.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>Hormone Replacement Therapy</h4>
+          <p>Hormone replacement therapy (HRT) is the most effective treatment for menopausal symptoms. Modern HRT preparations are safe for most women and carry benefits beyond symptom control including bone protection. Dr. Joshi will review your personal and family history to advise on the most appropriate preparation.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Non-hormonal Options</h4>
+          <p>For women who cannot or prefer not to take HRT, non-hormonal options including SSRIs, clonidine, and vaginal oestrogen preparations may be appropriate. Lifestyle modifications including exercise, diet, and stress management also play an important role.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Long-term Health</h4>
+          <p>Menopause is associated with increased risk of osteoporosis and cardiovascular disease. Dr. Joshi addresses these long-term health risks as part of her comprehensive menopause management approach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: PELVIC FLOOR -->
+  <section id="pelvic-floor" class="procedure-section" style="background:#FDFAF6; padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Pelvic Floor &middot; Surgical &amp; Non-surgical</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Pelvic Floor Problems</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Pelvic floor disorders — including urinary incontinence, pelvic organ prolapse, and related symptoms — are extremely common, affecting up to one third of women at some point in their lives. Despite being common, many women suffer in silence due to embarrassment. Dr. Joshi provides compassionate, specialist assessment and treatment in a confidential setting.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Conditions Treated</h4>
+          <p>Stress urinary incontinence (leaking with cough, sneeze or exercise), urgency incontinence, pelvic organ prolapse (bladder, uterine, or bowel prolapse), and post-childbirth pelvic floor dysfunction.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>Assessment</h4>
+          <p>A thorough history and pelvic examination, urodynamic studies where indicated, and discussion of severity and impact on daily life will guide the management plan.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Non-surgical Treatment</h4>
+          <p>Pelvic floor physiotherapy is the first-line treatment for most pelvic floor disorders. Bladder retraining and lifestyle modifications (fluid management, weight loss) are also important. Pessary fitting may be appropriate for prolapse.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Pelvic Floor Repair Surgery</h4>
+          <p>When conservative management has failed or the degree of prolapse warrants surgical correction, Dr. Joshi performs pelvic floor repair surgery (anterior colporrhaphy, posterior colporrhaphy, vaginal vault repair) to restore normal anatomy and function.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: SURGICAL PROCEDURES -->
+  <section id="surgery" class="procedure-section" style="padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Advanced Surgery &middot; Laparoscopic &amp; Hysteroscopic</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Surgical Procedures</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Dr. Joshi performs the full range of gynaecological surgical procedures, with particular expertise in minimally invasive (laparoscopic and hysteroscopic) approaches. Her European Diploma in Gynaecological Operative Endoscopy and training in da Vinci Robotic Surgery place her among the most technically advanced gynaecological surgeons in India.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Laparoscopic Procedures</h4>
+          <p>Total Laparoscopic Hysterectomy (TLH) &middot; Laparoscopic Ovarian Cystectomy &middot; Laparoscopic Myomectomy &middot; Laparoscopic Treatment of Ectopic Pregnancy &middot; Laparoscopic Treatment of Endometriosis &middot; Laparoscopic Ovarian Drilling (PCOS) &middot; Fertility-enhancing Laparoscopy &amp; Hysteroscopy &middot; Laparoscopic Uterine Septum Resection</p>
+        </div>
+        <div class="info-box d2">
+          <h4>Other Procedures</h4>
+          <p>Vaginal Hysterectomy &middot; Abdominal Hysterectomy &middot; Hysteroscopy with D&amp;C and MIRENA intrauterine system insertion &middot; Hysteroscopic Polypectomy &middot; Removal of lost or retained IUD &middot; Hysteroscopic Resection of Uterine Fibroid (TCRF) &middot; Hysteroscopic Resection of Uterine Septum &middot; Hysteroscopic Treatment of Intrauterine Synechiae (Asherman's Syndrome) &middot; Colposcopy (Diagnostic &amp; Treatment) &middot; LLETZ &middot; Pelvic Floor Repair Surgery &middot; Anterior &amp; Posterior Colporrhaphy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section style="background:#6B1E2E; padding:72px 0; text-align:center;">
+    <div style="max-width:720px; margin:0 auto; padding:0 60px;" data-anim="up">
+      <h3 style="font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:300; color:#fff; letter-spacing:0.03em; margin:0 0 20px; line-height:1.2;">Discuss Your Gynaecological Concern</h3>
+      <p style="font-size:13px; font-weight:300; color:rgba(255,255,255,0.78); margin:0 0 36px; line-height:1.85;">Every patient is different. Dr. Joshi will assess your specific circumstances and create a personalised management plan at your first consultation.</p>
+      <div style="display:flex; align-items:center; justify-content:center; gap:24px; flex-wrap:wrap;">
+        <a href="tel:+912242696969" class="btn-gold" style="background:#fff; color:#6B1E2E;">+91 22 4269 6969</a>
+        <a href="consultation.html" style="font-size:9px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.8); text-decoration:none; transition:color 0.2s;">Book Online &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#FDFAF6; padding:40px 60px; border-top:1px solid #EDD8DC; display:flex; justify-content:space-between; align-items:center;">
+    <div>
+      <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:12px; letter-spacing:0.22em; color:#1A1A1A; text-transform:uppercase;">DR. VAISHALI JOSHI</div>
+      <div style="font-size:8px; color:#9E6B72; letter-spacing:0.2em; text-transform:uppercase; margin-top:4px;">Senior Consultant Obstetrician &amp; Gynaecologist &middot; Kokilaben Dhirubhai Ambani Hospital, Mumbai</div>
+      <div style="font-size:8px; color:#9E6B72; letter-spacing:0.15em; text-transform:uppercase; margin-top:4px;">FRCOG (UK) &middot; CCT (UK) &middot; MD &middot; DNB &middot; DGO &middot; FCPS</div>
+    </div>
+    <div style="font-size:9px; font-weight:300; color:#aaa;">&copy; 2025 Dr. Vaishali Joshi. All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    function openMenu(){document.getElementById('menu-overlay').classList.add('open');document.body.style.overflow='hidden';}
+    function closeMenu(){document.getElementById('menu-overlay').classList.remove('open');document.body.style.overflow='';}
+    const header=document.getElementById('site-header');
+    window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+    const _obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');_obs.unobserve(e.target);}}),{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('[data-anim]').forEach(el=>_obs.observe(el));
+  </script>
+</body>
+</html>
