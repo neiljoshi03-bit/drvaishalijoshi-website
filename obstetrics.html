@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Vaishali Joshi - Obstetrics &amp; High Risk Pregnancy | Mumbai | Kokilaben Hospital</title>
+  <meta name="description" content="Dr. Vaishali Joshi specialises in high risk pregnancy, natural childbirth and pre-conception care at Kokilaben Hospital Mumbai. FRCOG from Royal College London." />
+  <link rel="canonical" href="https://drvaishalijoshi.com/obstetrics.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; font-weight: 200; color: #1A1A1A; line-height: 1.75; overflow-x: hidden; background: #FDFAF6; }
+    #site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.35s ease, box-shadow 0.35s ease; background: transparent; }
+    #site-header.scrolled { background: rgba(35,8,16,0.96); backdrop-filter: blur(12px); box-shadow: 0 1px 24px rgba(0,0,0,0.18); }
+    #menu-overlay { position:fixed; inset:0; background:rgba(30,8,16,0.98); z-index:200; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.35s ease; }
+    #menu-overlay.open { opacity:1; pointer-events:all; }
+    .menu-link { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; color:rgba(255,255,255,0.85); text-decoration:none; display:block; padding:6px 0; letter-spacing:0.04em; transition:color 0.2s; }
+    .menu-link:hover { color:#C4848E; }
+    .menu-link.active { color:#C4848E; }
+    .section-label { font-size:9px; font-weight:500; letter-spacing:0.28em; text-transform:uppercase; color:#9E6B72; }
+    .divider { width:40px; height:1px; background:#9E6B72; margin:0 auto; }
+    .btn-gold { background-color:#6B1E2E; color:#fff; font-size:9px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; padding:13px 30px; display:inline-block; text-decoration:none; transition:background 0.2s; }
+    .btn-gold:hover { background-color:#541727; }
+    .tag { display:inline-block; font-size:8px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; padding:4px 10px; border:1px solid #6B1E2E; color:#6B1E2E; margin-bottom:16px; }
+    .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:28px; }
+    .info-box { background:#FDFAF6; border:1px solid #EDD8DC; border-left:3px solid #6B1E2E; padding:20px 22px; }
+    .info-box h4 { font-size:8px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:#6B1E2E; margin-bottom:8px; }
+    .info-box p { font-size:12px; font-weight:300; color:#555; line-height:1.85; margin:0; }
+    .procedure-section { border-top:1px solid #EDD8DC; }
+    .sub-nav a { font-size:10px; font-weight:400; letter-spacing:0.12em; color:#555; text-decoration:none; padding:8px 0; display:block; border-bottom:1px solid #EDD8DC; transition:color 0.2s; }
+    .sub-nav a:hover { color:#6B1E2E; }
+    [data-anim]{opacity:0;transition:opacity 0.75s ease,transform 0.75s ease;}
+    [data-anim="up"]{transform:translateY(32px);}
+    [data-anim="left"]{transform:translateX(-36px);}
+    [data-anim="right"]{transform:translateX(36px);}
+    [data-anim="scale"]{transform:scale(0.96);}
+    [data-anim].in{opacity:1;transform:none;}
+    .d1{transition-delay:0.12s!important;}.d2{transition-delay:0.22s!important;}.d3{transition-delay:0.34s!important;}.d4{transition-delay:0.46s!important;}
+    #hamburger{display:none;}
+    @media(max-width:768px){
+      /* Header */
+      #site-header>div{padding:14px 20px!important;}
+      #site-header nav{display:none!important;}
+      #hamburger{display:flex!important;}
+
+      /* Overflow */
+      body{overflow-x:hidden;}
+
+      /* General section padding */
+      [style*="padding:80px 60px"]{padding:48px 20px!important;}
+      [style*="padding:72px 60px"]{padding:48px 20px!important;}
+      [style*="padding:64px 60px"]{padding:40px 20px!important;}
+      [style*="padding:60px 60px"]{padding:40px 20px!important;}
+      [style*="padding:56px 60px"]{padding:36px 20px!important;}
+      [style*="padding:48px 60px"]{padding:36px 20px!important;}
+      [style*="padding:40px 60px"]{padding:32px 20px!important;}
+      [style*="padding:0 60px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="padding:80px 48px"]{padding:48px 20px!important;}
+      [style*="padding:72px 48px"]{padding:48px 20px!important;}
+      [style*="padding:64px 48px"]{padding:40px 20px!important;}
+      [style*="padding:60px 48px"]{padding:40px 20px!important;}
+      [style*="padding:0 48px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="padding:0 40px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="max-width:1200px"]{padding-left:20px!important;padding-right:20px!important;}
+
+      /* Grids */
+      div[style*="grid-template-columns"],section[style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:20px!important;}
+      .info-grid{grid-template-columns:1fr!important;}
+
+      /* Typography scaling */
+      [style*="font-size:72px"]{font-size:36px!important;line-height:1.1!important;}
+      [style*="font-size:64px"]{font-size:32px!important;line-height:1.1!important;}
+      [style*="font-size:60px"]{font-size:30px!important;line-height:1.1!important;}
+      [style*="font-size:58px"]{font-size:28px!important;line-height:1.15!important;}
+      [style*="font-size:56px"]{font-size:28px!important;line-height:1.15!important;}
+      [style*="font-size:52px"]{font-size:26px!important;line-height:1.2!important;}
+      [style*="font-size:48px"]{font-size:24px!important;}
+      [style*="font-size:44px"]{font-size:22px!important;}
+      [style*="font-size:40px"]{font-size:22px!important;}
+      [style*="font-size:38px"]{font-size:20px!important;}
+      [style*="font-size:36px"]{font-size:20px!important;}
+
+      /* Hero sections */
+      section[style*="height:640px"]{height:auto!important;min-height:380px!important;padding-top:100px!important;padding-bottom:80px!important;}
+      section[style*="height:520px"]{height:auto!important;min-height:340px!important;padding-top:100px!important;padding-bottom:60px!important;}
+      section[style*="height:460px"]{height:auto!important;min-height:320px!important;padding-top:100px!important;padding-bottom:60px!important;}
+      section[style*="height:400px"]{height:auto!important;min-height:280px!important;padding-top:100px!important;padding-bottom:48px!important;}
+      section[style*="height:380px"]{height:auto!important;min-height:260px!important;padding-top:100px!important;padding-bottom:48px!important;}
+
+      /* Proc panels */
+      .proc-panel{height:240px!important;}
+
+      /* Sidebar widths */
+      div[style*="width:320px"]{width:100%!important;}
+      div[style*="width:300px"]{width:100%!important;}
+
+      /* Stats/gold strip */
+      [style*="background:#B8965A"]>div{flex-wrap:wrap!important;}
+      [style*="background:#B8965A"]>div>div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.2)!important;padding:16px 12px!important;}
+
+      /* Dark stats panels with flex children */
+      div[style*="background:#2A0D15"]>div[style*="display:flex"]{flex-wrap:wrap!important;}
+
+      /* Why cards grid */
+      .why-grid{grid-template-columns:1fr!important;}
+
+      /* Timeline */
+      .timeline-entry{grid-template-columns:1fr!important;}
+      .timeline-left{text-align:left!important;padding-right:0!important;padding-left:28px!important;}
+      .timeline-right{padding-left:28px!important;}
+      .timeline-line{left:8px!important;}
+      .timeline-dot{left:8px!important;}
+
+      /* Testimonials */
+      .testi-grid{grid-template-columns:1fr!important;}
+      .testi-inner{padding:32px 24px!important;}
+
+      /* Footer */
+      footer>div>div.flex{flex-direction:column!important;gap:20px!important;}
+      footer [style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:16px!important;}
+
+      /* Forms */
+      form [style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:0!important;}
+      .form-field{width:100%!important;}
+
+      /* Step items */
+      .step-item{padding-left:52px!important;}
+
+      /* Tip cards */
+      .tip-card{padding:28px 24px!important;}
+
+      /* Info boxes */
+      .info-box{padding:18px 16px!important;}
+
+      /* Accordion */
+      .accordion-btn{padding:18px 16px!important;}
+
+      /* Footer — direct flex on <footer> */
+      footer[style*="display:flex"]{flex-direction:column!important;align-items:flex-start!important;gap:16px!important;padding:32px 20px!important;}
+
+      /* obstetrics.html specific */
+      aside[style*="width:260px"],aside[style*="width:280px"],div[style*="width:260px"],div[style*="width:280px"]{display:none!important;}
+      main[style*="flex:1"],div[style*="flex:1"]{width:100%!important;}
+      [style*="padding:56px 60px"]{padding:36px 20px!important;}
+      [style*="padding:52px 60px"]{padding:36px 20px!important;}
+
+      /* Procedure sections: inner max-width containers */
+      .procedure-section>div[style*="max-width:1100px"]{padding-left:20px!important;padding-right:20px!important;}
+
+      /* CTA section inner */
+      section[style*="background:#6B1E2E"]>div[style*="max-width:720px"]{padding-left:20px!important;padding-right:20px!important;}
+
+      /* Gold banner */
+      div[style*="background:#B8965A"]>div[style*="max-width"]{padding-left:20px!important;padding-right:20px!important;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENU OVERLAY -->
+  <div id="menu-overlay">
+    <button onclick="closeMenu()" aria-label="Close menu" style="position:absolute;top:28px;right:36px;background:none;border:none;cursor:pointer;padding:8px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="index.html" class="menu-link">Home</a>
+    <a href="about.html" class="menu-link">About</a>
+    <a href="obstetrics.html" class="menu-link active">Obstetrics</a>
+    <a href="gynaecology.html" class="menu-link">Gynaecology</a>
+    <a href="laparoscopic.html" class="menu-link">Laparoscopic Surgery</a>
+    <a href="patient-info.html" class="menu-link">Patient Information</a>
+    <a href="health-tips.html" class="menu-link">Health Tips</a>
+    <a href="testimonials.html" class="menu-link">Testimonials</a>
+    <a href="consultation.html" class="menu-link">Book Consultation</a>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header id="site-header">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 48px;">
+      <a href="index.html" style="text-decoration:none;">
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.26em;color:#fff;text-transform:uppercase;line-height:1.3;">DR. VAISHALI JOSHI</div>
+        <div style="font-size:7px;font-weight:300;letter-spacing:0.22em;color:rgba(255,255,255,0.65);text-transform:uppercase;margin-top:2px;">FRCOG · CCT · MD · DNB · DGO · FCPS</div>
+      </a>
+      <nav style="display:flex;gap:28px;align-items:center;">
+        <a href="index.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Home</a>
+        <a href="about.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">About</a>
+        <a href="obstetrics.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:#fff;text-decoration:none;text-transform:uppercase;transition:color 0.2s;" class="nav-active">Obstetrics</a>
+        <a href="gynaecology.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Gynaecology</a>
+        <a href="laparoscopic.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Laparoscopic Surgery</a>
+        <a href="patient-info.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Patient Information</a>
+        <a href="health-tips.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Health Tips</a>
+        <a href="testimonials.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-decoration:none;text-transform:uppercase;transition:color 0.2s;">Testimonials</a>
+        <a href="consultation.html" class="btn-gold" style="font-size:7px;padding:10px 20px;">Book Consultation</a>
+      </nav>
+      <button onclick="openMenu()" style="background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;" id="hamburger">
+        <span style="display:block;width:22px;height:1px;background:#fff;"></span>
+        <span style="display:block;width:22px;height:1px;background:#fff;"></span>
+        <span style="display:block;width:14px;height:1px;background:#fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative" style="height:520px; background:linear-gradient(135deg, #6B1E2E 0%, #2A0D15 60%, #1A0A0F 100%); display:flex; align-items:center; justify-content:center; text-align:center; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:rgba(35,8,16,0.35);"></div>
+    <div style="position:relative; z-index:2; padding:0 40px;" data-anim="up">
+      <div style="font-size:9px; font-weight:500; letter-spacing:0.32em; text-transform:uppercase; color:rgba(255,255,255,0.65); margin-bottom:20px;">Dr. Vaishali Joshi &middot; Kokilaben Dhirubhai Ambani Hospital</div>
+      <h1 style="font-family:'Cormorant Garamond',serif; font-size:58px; font-weight:300; color:#fff; letter-spacing:0.03em; line-height:1.1; margin:0 0 24px;">Obstetrics &amp; High Risk Pregnancy</h1>
+      <div style="width:48px; height:1px; background:rgba(255,255,255,0.4); margin:0 auto 24px;"></div>
+      <p style="font-size:13px; font-weight:300; color:rgba(255,255,255,0.75); max-width:560px; margin:0 auto; letter-spacing:0.04em;">Expert management of high risk pregnancies, natural childbirth, and comprehensive pre-conception care.</p>
+    </div>
+  </section>
+
+  <!-- NAME BANNER -->
+  <div style="background:#B8965A; padding:0;">
+    <div style="max-width:1400px; margin:0 auto; padding:0 60px; display:flex; align-items:center; justify-content:center; height:52px;">
+      <span style="font-size:8px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:#fff;">OBSTETRICS &middot; KOKILABEN DHIRUBHAI AMBANI HOSPITAL, MUMBAI</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW + QUICK NAV -->
+  <section style="background:#FDFAF6;">
+    <div style="max-width:1200px; margin:0 auto; padding:72px 60px; display:grid; grid-template-columns:1fr 320px; gap:80px; align-items:start;">
+      <!-- Left: Overview -->
+      <div data-anim="left">
+        <div class="section-label" style="margin-bottom:16px;">OVERVIEW</div>
+        <div class="divider" style="margin:0 0 32px 0;"></div>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 24px;">Obstetrics &amp; High Risk Pregnancy Care</h2>
+        <p style="font-size:13px; font-weight:300; color:#444; margin:0 0 18px; line-height:1.85;">Obstetrics is the branch of medicine concerned with the care of women during pregnancy, childbirth, and the post-natal period. Dr. Vaishali Joshi specialises in the full spectrum of obstetric care, with particular expertise in the management of high risk pregnancies — cases in which maternal or foetal health requires enhanced monitoring, specialist assessment, and coordinated multidisciplinary care.</p>
+        <p style="font-size:13px; font-weight:300; color:#444; margin:0; line-height:1.85;">With 24 years of experience and 14 years of specialist training in the United Kingdom, Dr. Joshi combines international expertise with a compassionate, patient-centred approach. Her practice at Kokilaben Dhirubhai Ambani Hospital provides seamless access to the hospital's full range of specialist services with evidence-based patient care plans.</p>
+      </div>
+      <!-- Right: Quick Nav -->
+      <div style="padding-top:8px;" data-anim="right">
+        <div style="font-size:8px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:#6B1E2E; margin-bottom:14px;">Conditions &amp; Procedures on This Page</div>
+        <nav class="sub-nav">
+          <a href="#high-risk">High Risk Pregnancy</a>
+          <a href="#natural-birth">Natural Childbirth</a>
+          <a href="#preconception">Pre-conception Clinics</a>
+          <a href="#complicated">Difficult &amp; Complicated Deliveries</a>
+        </nav>
+        <!-- Dark CTA box -->
+        <div style="background:#6B1E2E; padding:24px 20px; text-align:center; margin-top:28px;">
+          <div style="font-size:8px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:10px;">Book a Consultation</div>
+          <a href="tel:+912242696969" style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:400; color:#fff; text-decoration:none; display:block; margin-bottom:10px;">+91 22 4269 6969</a>
+          <div style="font-size:8px; font-weight:300; color:rgba(255,255,255,0.6); letter-spacing:0.1em;">Kokilaben Dhirubhai Ambani Hospital</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: HIGH RISK PREGNANCY -->
+  <section id="high-risk" class="procedure-section" style="background:#FDFAF6; padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">High Risk Pregnancy &middot; Specialist Care</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">High Risk Pregnancy</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">A pregnancy is considered high risk when there is an increased chance of complications for the mother, the baby, or both. High risk pregnancies require enhanced monitoring, specialist assessment, and — in many cases — coordination with other specialists across disciplines. Dr. Joshi has extensive experience managing the full spectrum of high risk obstetric conditions, developed over 14 years of specialist training and practice in the United Kingdom.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Conditions Treated</h4>
+          <p>Pre-eclampsia, gestational diabetes, autoimmune disease including SLE, congenital heart disease, extreme prematurity, rheumatic heart disease, multiple pregnancy, placenta praevia, intrauterine growth restriction, and other maternal or foetal conditions requiring enhanced surveillance.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>How It Is Managed</h4>
+          <p>High risk pregnancies are managed through a structured programme of enhanced antenatal monitoring including more frequent clinic visits, specialist scans (growth, Doppler, placental assessment), additional blood tests, and — where required — coordination with cardiologists, immunologists, neonatologists, or other specialists at Kokilaben Dhirubhai Ambani Hospital.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>What to Expect</h4>
+          <p>Patients under Dr. Joshi's care for high risk pregnancy can expect a detailed personalised management plan, clear communication at every stage, and access to the full range of specialist services at Kokilaben Hospital. Where possible, Dr. Joshi works to support natural delivery — induction or caesarean section is recommended only when clinically indicated.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Key Benefits</h4>
+          <p>Early identification and careful management of high risk conditions significantly reduces the risk of complications for both mother and baby. Dr. Joshi's international training and experience means patients receive care that meets the standards of leading UK and international obstetric units.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: NATURAL CHILDBIRTH -->
+  <section id="natural-birth" class="procedure-section" style="padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Natural Childbirth &middot; Patient-Centred</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Natural Childbirth</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Dr. Joshi is a strong advocate for natural childbirth where it is clinically safe. She recognises that childbirth is one of the most significant experiences of a woman's life, and works with each patient to develop a birth plan that reflects their wishes, values, and clinical circumstances. A caesarean section is recommended only when it is genuinely in the best interests of the mother or baby.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>Philosophy</h4>
+          <p>Dr. Joshi's approach to childbirth is guided by the principle that medical intervention should be offered when needed — not as a matter of routine. Her training in the UK National Health Service — where natural birth rates are carefully monitored — has given her a disciplined approach to avoiding unnecessary intervention.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>Birth Planning</h4>
+          <p>At antenatal consultations, Dr. Joshi discusses the patient's birth preferences, reviews the clinical picture, and collaborates to create a personalised birth plan. This plan is revisited as the pregnancy progresses to ensure it remains appropriate.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Support in Labour</h4>
+          <p>Dr. Joshi and her team provide expert support throughout labour, monitoring both mother and baby carefully and responding promptly to any changes. Pain relief options including epidural analgesia are available and discussed in advance.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>When Intervention Is Needed</h4>
+          <p>Should a situation arise during labour that makes natural delivery unsafe, Dr. Joshi is skilled in performing both instrumental deliveries and emergency caesarean sections. Her experience managing high risk and complicated deliveries means patients are in expert hands at every stage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PRE-CONCEPTION -->
+  <section id="preconception" class="procedure-section" style="background:#FDFAF6; padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Pre-conception &middot; Planning Your Pregnancy</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Pre-conception Clinics</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 16px; line-height:1.85;">Our Pre-conception Clinic is designed to help every woman's dream of motherhood become a reality. Though pregnancy is a natural process, some women may encounter challenges that require thorough evaluation and specialist guidance prior to conception. Dr. Joshi's pre-conception service provides personalised assessment, optimising health before pregnancy begins.</p>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Optimising your health before pregnancy is one of the most effective ways to improve outcomes for both mother and baby. Dr. Joshi's Pre-conception Clinic provides a comprehensive assessment of your health, medical history, and circumstances, and creates a personalised plan to give your pregnancy the best possible start.</p>
+      </div>
+
+      <!-- Women who should attend panel -->
+      <div style="background:#fff; border:1px solid #EDD8DC; border-left:3px solid #6B1E2E; padding:28px 32px; margin-top:28px;" data-anim="up">
+        <h4 style="font-size:10px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:#6B1E2E; margin:0 0 16px;">Women Who Should Attend a Pre-conception Clinic</h4>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="font-size:13px; font-weight:300; color:#444; line-height:1.85; padding:8px 0 8px 22px; position:relative; border-bottom:1px solid #F5E8EB;"><span style="position:absolute; left:0; top:14px; width:8px; height:8px; background:#6B1E2E;"></span>Women with a history of recurrent miscarriage or pregnancy loss</li>
+          <li style="font-size:13px; font-weight:300; color:#444; line-height:1.85; padding:8px 0 8px 22px; position:relative; border-bottom:1px solid #F5E8EB;"><span style="position:absolute; left:0; top:14px; width:8px; height:8px; background:#6B1E2E;"></span>Women with pre-existing medical conditions such as diabetes, thyroid disorders or hypertension</li>
+          <li style="font-size:13px; font-weight:300; color:#444; line-height:1.85; padding:8px 0 8px 22px; position:relative; border-bottom:1px solid #F5E8EB;"><span style="position:absolute; left:0; top:14px; width:8px; height:8px; background:#6B1E2E;"></span>Women who have been trying to conceive for 6 months or more without success</li>
+          <li style="font-size:13px; font-weight:300; color:#444; line-height:1.85; padding:8px 0 8px 22px; position:relative; border-bottom:1px solid #F5E8EB;"><span style="position:absolute; left:0; top:14px; width:8px; height:8px; background:#6B1E2E;"></span>Women with a family history of genetic conditions or chromosomal abnormalities</li>
+          <li style="font-size:13px; font-weight:300; color:#444; line-height:1.85; padding:8px 0 8px 22px; position:relative;"><span style="position:absolute; left:0; top:14px; width:8px; height:8px; background:#6B1E2E;"></span>Previous cancer survivors planning a pregnancy</li>
+        </ul>
+      </div>
+
+      <div class="info-grid" data-anim="up" style="margin-top:28px;">
+        <div class="info-box d1">
+          <h4>Who Should Attend</h4>
+          <p>Any woman planning to conceive who has a pre-existing medical condition (diabetes, hypertension, autoimmune disease, cardiac condition), a history of pregnancy loss or complication, or who simply wishes to optimise her health before conceiving.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>What Is Assessed</h4>
+          <p>A full medical history review, physical examination, blood tests (including rubella immunity, thyroid function, anaemia screen, genetic carrier testing where appropriate), and review of current medications for safety in pregnancy.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>What You Will Receive</h4>
+          <p>A detailed personalised pre-conception plan including advice on folic acid supplementation, medication adjustments, lifestyle modifications, and timing of conception. Referral to relevant specialists where required.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Timing</h4>
+          <p>Ideally, a pre-conception consultation should take place 3–6 months before you plan to conceive. This allows sufficient time for any adjustments to medication, lifestyle, or vaccination status before pregnancy begins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: COMPLICATED DELIVERIES -->
+  <section id="complicated" class="procedure-section" style="padding:72px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 60px;">
+      <div data-anim="up">
+        <span class="tag">Complicated Deliveries &middot; Expert Management</span>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:#1A1A1A; letter-spacing:0.02em; line-height:1.2; margin:0 0 20px;">Difficult &amp; High Risk Complicated Deliveries</h2>
+        <p style="font-size:14px; font-weight:300; color:#444; max-width:820px; margin:0 0 8px; line-height:1.85;">Some deliveries require a higher level of clinical expertise — whether due to foetal position, prolonged labour, maternal complications, or other factors that emerge during childbirth. Dr. Joshi's extensive training on the Advanced Labour Ward Management programme in the UK, combined with 14 years of experience managing deliveries at leading NHS teaching hospitals, means she is equipped to manage the full spectrum of complex obstetric scenarios.</p>
+      </div>
+      <div class="info-grid" data-anim="up">
+        <div class="info-box d1">
+          <h4>When Deliveries Become Complicated</h4>
+          <p>Complications may arise from foetal malpresentation (breech, transverse), cephalopelvic disproportion, cord prolapse, shoulder dystocia, placental abruption, foetal distress, or failure to progress in labour.</p>
+        </div>
+        <div class="info-box d2">
+          <h4>Instrumental Delivery</h4>
+          <p>Where appropriate and clinically safe, Dr. Joshi is skilled in ventouse (vacuum) and forceps delivery — techniques that can safely expedite delivery without the need for caesarean section when properly performed by an experienced operator.</p>
+        </div>
+        <div class="info-box d3">
+          <h4>Emergency Caesarean Section</h4>
+          <p>When a rapid response is required, Dr. Joshi's surgical expertise and the facilities at Kokilaben Dhirubhai Ambani Hospital ensure that emergency caesarean section can be performed swiftly and safely.</p>
+        </div>
+        <div class="info-box d4">
+          <h4>Post-delivery Care</h4>
+          <p>Careful post-delivery management is essential for both mother and baby. Dr. Joshi and her team ensure comprehensive monitoring in the immediate post-natal period and provide clear guidance on recovery, feeding, and follow-up.</p>
+        </div>
+      </div>
+
+      <!-- Sub-section: Emergency Caesarean Section -->
+      <div style="background:#fff; border:1px solid #EDD8DC; border-left:3px solid #6B1E2E; padding:32px 36px; margin-top:36px;" data-anim="up">
+        <h3 style="font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:500; color:#1A1A1A; margin:0 0 14px; line-height:1.3;">Emergency Caesarean Section</h3>
+        <p style="font-size:13px; font-weight:300; color:#444; line-height:1.85; margin:0;">Emergency Caesarean section (C-section) requires swift clinical decision-making and experienced surgical technique. Of particular complexity is the C-section performed at full cervical dilatation — a situation that demands exceptional expertise to safely deliver the baby while avoiding maternal complications including transverse extension of the uterine incision. Dr. Joshi has extensive experience managing these high-stakes obstetric emergencies with precision and composure.</p>
+      </div>
+
+      <!-- Sub-section: Instrumental Delivery -->
+      <div style="background:#fff; border:1px solid #EDD8DC; border-left:3px solid #6B1E2E; padding:32px 36px; margin-top:20px;" data-anim="up">
+        <h3 style="font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:500; color:#1A1A1A; margin:0 0 14px; line-height:1.3;">Instrumental Delivery</h3>
+        <p style="font-size:13px; font-weight:300; color:#444; line-height:1.85; margin:0;">Instrumental delivery — using forceps or ventouse — is a skilled obstetric procedure that, when performed correctly, offers a safe alternative to emergency Caesarean section. Dr. Joshi has introduced a specialised practice of conducting trial instrumental deliveries in theatre, with the full surgical team and emergency Caesarean section services immediately available. This approach maximises the patient's opportunity to achieve a vaginal delivery while ensuring the complete safety of both mother and baby at all times — particularly in cases where a C-section at full dilatation is being considered.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section style="background:#6B1E2E; padding:72px 0; text-align:center;">
+    <div style="max-width:720px; margin:0 auto; padding:0 60px;" data-anim="up">
+      <h3 style="font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:300; color:#fff; letter-spacing:0.03em; margin:0 0 20px; line-height:1.2;">Discuss Your Pregnancy Care</h3>
+      <p style="font-size:13px; font-weight:300; color:rgba(255,255,255,0.78); margin:0 0 36px; line-height:1.85;">Every pregnancy is individual. Dr. Joshi will assess your specific circumstances and create a personalised management plan at your first consultation.</p>
+      <div style="display:flex; align-items:center; justify-content:center; gap:24px; flex-wrap:wrap;">
+        <a href="tel:+912242696969" class="btn-gold" style="background:#fff; color:#6B1E2E;">+91 22 4269 6969</a>
+        <a href="consultation.html" style="font-size:9px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.8); text-decoration:none; transition:color 0.2s;">Book Online &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#FDFAF6; padding:40px 60px; border-top:1px solid #EDD8DC; display:flex; justify-content:space-between; align-items:center;">
+    <div>
+      <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:12px; letter-spacing:0.22em; color:#1A1A1A; text-transform:uppercase;">DR. VAISHALI JOSHI</div>
+      <div style="font-size:8px; color:#9E6B72; letter-spacing:0.2em; text-transform:uppercase; margin-top:4px;">Senior Consultant Obstetrician &amp; Gynaecologist &middot; Kokilaben Dhirubhai Ambani Hospital, Mumbai</div>
+      <div style="font-size:8px; color:#9E6B72; letter-spacing:0.15em; text-transform:uppercase; margin-top:4px;">FRCOG (UK) &middot; CCT (UK) &middot; MD &middot; DNB &middot; DGO &middot; FCPS</div>
+    </div>
+    <div style="font-size:9px; font-weight:300; color:#aaa;">&copy; 2025 Dr. Vaishali Joshi. All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    function openMenu(){document.getElementById('menu-overlay').classList.add('open');document.body.style.overflow='hidden';}
+    function closeMenu(){document.getElementById('menu-overlay').classList.remove('open');document.body.style.overflow='';}
+    const header=document.getElementById('site-header');
+    window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+    const _obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');_obs.unobserve(e.target);}}),{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('[data-anim]').forEach(el=>_obs.observe(el));
+  </script>
+</body>
+</html>
