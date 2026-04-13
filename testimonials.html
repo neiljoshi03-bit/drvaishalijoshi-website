@@ -119,9 +119,9 @@
       div[style*="width:320px"]{width:100%!important;}
       div[style*="width:300px"]{width:100%!important;}
 
-      /* Stats/gold strip */
-      [style*="background:#B8965A"]>div{flex-wrap:wrap!important;}
-      [style*="background:#B8965A"]>div>div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.2)!important;padding:16px 12px!important;}
+      /* Stats/burgundy strip */
+      [style*="background:#541727"]>div{flex-wrap:wrap!important;}
+      [style*="background:#541727"]>div>div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.2)!important;padding:16px 12px!important;}
 
       /* Dark stats panels with flex children */
       div[style*="background:#2A0D15"]>div[style*="display:flex"]{flex-wrap:wrap!important;}
@@ -172,9 +172,10 @@
       .review-card{padding:28px 22px!important;}
       [style*="padding:64px 48px"]{padding:40px 20px!important;}
 
-      /* Rating summary strip — stack vertically */
-      section[style*="background:#6B1E2E"][style*="padding:48px"] > div[style*="display:flex"]{flex-direction:column!important;gap:28px!important;}
-      section[style*="background:#6B1E2E"][style*="padding:48px"] > div > div[style*="width:1px"]{display:none!important;}
+      /* Rating summary strip — stack vertically with horizontal separators */
+      section[style*="background:#6B1E2E"][style*="padding:48px"] > div[style*="display:flex"]{flex-direction:column!important;gap:24px!important;padding:0 24px!important;}
+      section[style*="background:#6B1E2E"][style*="padding:48px"] > div > div[style*="width:1px"]{width:60%!important;height:1px!important;margin:0 auto!important;}
+      section[style*="background:#6B1E2E"][style*="padding:48px"] > div > div[style*="flex:1"]{padding:0!important;width:100%!important;}
 
       /* Dark quote card padding */
       div[style*="padding:48px"][style*="background:rgba"]{padding:28px 22px!important;}
