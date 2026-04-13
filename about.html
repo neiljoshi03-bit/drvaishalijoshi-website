@@ -130,8 +130,8 @@
       div[style*="width:300px"]{width:100%!important;}
 
       /* Stats/gold strip */
-      [style*="background:#B8965A"]>div{flex-wrap:wrap!important;}
-      [style*="background:#B8965A"]>div>div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.2)!important;padding:16px 12px!important;}
+      [style*="background:#541727"]>div{flex-wrap:wrap!important;}
+      [style*="background:#541727"]>div>div{width:100%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.15)!important;padding:20px 16px!important;}
 
       /* Dark stats panels with flex children */
       div[style*="background:#2A0D15"]>div[style*="display:flex"]{flex-wrap:wrap!important;}
@@ -180,6 +180,18 @@
       /* about.html specific */
       .bio-flex{flex-direction:column!important;gap:36px!important;}
       .bio-photo{width:100%!important;height:320px!important;}
+      .bio-photo img{object-position:center 20%!important;}
+
+      /* Name banner on about page */
+      [style*="background:#541727"][style*="padding:24px 60px"]{padding:18px 14px!important;}
+      [style*="background:#541727"][style*="padding:24px 60px"] [style*="font-size:21px"]{font-size:12px!important;letter-spacing:0.18em!important;}
+      [style*="background:#541727"][style*="padding:24px 60px"] [style*="font-size:8px"]{font-size:7px!important;letter-spacing:0.08em!important;line-height:1.5!important;}
+
+      /* Hero padding tighter */
+      section[style*="height:460px"]{padding-top:88px!important;padding-bottom:40px!important;min-height:280px!important;}
+      section[style*="height:460px"] [style*="padding:0 40px"]{padding:0 20px!important;}
+      section[style*="height:460px"] h1{margin-bottom:14px!important;}
+      section[style*="height:460px"] p{line-height:1.6!important;}
       [style*="padding:52px 60px"]{padding:36px 20px!important;}
 
       /* Drop cap sizing */
@@ -268,7 +280,7 @@
 </section>
 
 <!-- NAME BANNER -->
-<div style="background:#B8965A;padding:24px 60px;">
+<div style="background:#541727;padding:24px 60px;">
   <div style="max-width:1200px;margin:0 auto;text-align:center;">
     <div style="font-family:'Montserrat',sans-serif;font-size:21px;font-weight:300;color:#fff;letter-spacing:0.38em;text-transform:uppercase;margin-bottom:7px;">DR. VAISHALI JOSHI</div>
     <div style="font-size:8px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.8);">SENIOR CONSULTANT OBSTETRICIAN & GYNAECOLOGIST · KOKILABEN DHIRUBHAI AMBANI HOSPITAL, MUMBAI</div>
