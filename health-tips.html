@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Vaishali Joshi - Women's Health Tips &amp; Guidance | Obstetrician Gynaecologist Mumbai</title>
+  <meta name="description" content="Women's health guidance from Dr. Vaishali Joshi — preparing for your appointment, pregnancy warning signs, managing PCOS, endometriosis, menopause, colposcopy, and long-term women's health.">
+  <meta name="keywords" content="obstetrician gynaecologist Mumbai, women's health tips, pregnancy warning signs, PCOS management, menopause advice, Dr Vaishali Joshi, Kokilaben Hospital">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://drvaishalijoshi.com/health-tips.html">
+  <meta property="og:title" content="Dr. Vaishali Joshi - Women's Health Tips | Obstetrician Gynaecologist Mumbai">
+  <meta property="og:description" content="Women's health guidance from Dr. Vaishali Joshi — pregnancy care, PCOS, endometriosis, menopause, and cervical health.">
+  <meta property="og:url" content="https://drvaishalijoshi.com/health-tips.html">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; font-weight: 300; color: #1A1A1A; line-height: 1.8; overflow-x: hidden; background: #FDFAF6; }
+
+    #site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.35s ease, box-shadow 0.35s ease; background: rgba(35,8,16,0.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 24px rgba(0,0,0,0.18); }
+    #site-header.scrolled { background: rgba(35,8,16,0.97); }
+
+    .section-label { font-size: 9px; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: #9E6B72; }
+    .divider { width: 40px; height: 1px; background: #9E6B72; }
+    .btn-gold { background-color:#6B1E2E; color:#fff; font-size:9px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; padding:13px 30px; display:inline-block; text-decoration:none; transition:background 0.2s; }
+    .btn-gold:hover { background-color:#541727; }
+
+    /* Tip cards */
+    .tip-card { background: #fff; border: 1px solid #EDD8DC; border-top: 4px solid #6B1E2E; padding: 40px; transition: box-shadow 0.3s, transform 0.3s; }
+    .tip-card:hover { box-shadow: 0 12px 40px rgba(107,30,46,0.14); transform: translateY(-4px); }
+    .tip-number { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; color: #EDD8DC; line-height: 1; margin-bottom: 8px; }
+    .tip-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: #2A0D15; margin-bottom: 12px; line-height: 1.3; }
+    .tip-body { font-size: 13px; font-weight: 300; color: #555; line-height: 1.85; }
+
+    /* Accordion */
+    .accordion-item { border-bottom: 1px solid #EDD8DC; }
+    .accordion-btn { width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 20px 0; display: flex; justify-content: space-between; align-items: center; font-family: 'Montserrat', sans-serif; }
+    .accordion-title { font-size: 14px; font-weight: 500; color: #2A0D15; letter-spacing: 0.03em; }
+    .accordion-icon { font-size: 18px; color: #6B1E2E; font-weight: 300; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px; }
+    .accordion-icon.open { transform: rotate(45deg); }
+    .accordion-body { display: none; padding: 0 0 20px 0; font-size: 13px; font-weight: 300; color: #555; line-height: 1.85; }
+    .accordion-body.open { display: block; }
+
+    /* Timeline */
+    .timeline-item { display: flex; gap: 28px; margin-bottom: 36px; }
+    .timeline-dot { flex-shrink: 0; width: 48px; height: 48px; background: #6B1E2E; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 500; color: #fff; margin-top: 2px; }
+
+    /* Checklist */
+    .checklist li { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; font-weight: 300; color: #444; line-height: 1.7; margin-bottom: 12px; }
+    .checklist li::before { content: '✓'; flex-shrink: 0; width: 20px; height: 20px; background: #6B1E2E; color: #fff; font-size: 11px; display: flex; align-items: center; justify-content: center; margin-top: 2px; font-weight: 600; }
+
+    /* Scroll animations */
+    [data-anim] { opacity: 0; transition: opacity 0.7s ease, transform 0.7s ease; }
+    [data-anim="up"] { transform: translateY(28px); }
+    [data-anim="left"] { transform: translateX(-32px); }
+    [data-anim="right"] { transform: translateX(32px); }
+    [data-anim="fade"] { transform: scale(0.97); }
+    [data-anim].in { opacity: 1; transform: none; }
+    .d1 { transition-delay: 0.1s !important; }
+    .d2 { transition-delay: 0.2s !important; }
+    .d3 { transition-delay: 0.3s !important; }
+    .d4 { transition-delay: 0.4s !important; }
+    .d5 { transition-delay: 0.5s !important; }
+
+    /* Menu overlay */
+    #menu-overlay { position:fixed; inset:0; background:rgba(30,8,16,0.98); z-index:200; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.35s ease; }
+    #menu-overlay.open { opacity:1; pointer-events:all; }
+    .menu-link { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; color:rgba(255,255,255,0.85); text-decoration:none; display:block; padding:6px 0; letter-spacing:0.04em; transition:color 0.2s; }
+    .menu-link:hover { color:#C4848E; }
+    .menu-link.active { color:#C4848E; }
+
+    #hamburger{display:none;}
+    @media(max-width:768px){
+      /* Header */
+      #site-header>div{padding:14px 20px!important;}
+      #site-header nav{display:none!important;}
+      #hamburger{display:flex!important;}
+
+      /* Overflow */
+      body{overflow-x:hidden;}
+
+      /* General section padding */
+      [style*="padding:80px 60px"]{padding:48px 20px!important;}
+      [style*="padding:72px 60px"]{padding:48px 20px!important;}
+      [style*="padding:64px 60px"]{padding:40px 20px!important;}
+      [style*="padding:60px 60px"]{padding:40px 20px!important;}
+      [style*="padding:56px 60px"]{padding:36px 20px!important;}
+      [style*="padding:48px 60px"]{padding:36px 20px!important;}
+      [style*="padding:40px 60px"]{padding:32px 20px!important;}
+      [style*="padding:0 60px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="padding:80px 48px"]{padding:48px 20px!important;}
+      [style*="padding:72px 48px"]{padding:48px 20px!important;}
+      [style*="padding:64px 48px"]{padding:40px 20px!important;}
+      [style*="padding:60px 48px"]{padding:40px 20px!important;}
+      [style*="padding:0 48px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="padding:0 40px"]{padding-left:20px!important;padding-right:20px!important;}
+      [style*="max-width:1200px"]{padding-left:20px!important;padding-right:20px!important;}
+
+      /* Grids */
+      div[style*="grid-template-columns"],section[style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:20px!important;}
+      .info-grid{grid-template-columns:1fr!important;}
+
+      /* Typography scaling */
+      [style*="font-size:72px"]{font-size:36px!important;line-height:1.1!important;}
+      [style*="font-size:64px"]{font-size:32px!important;line-height:1.1!important;}
+      [style*="font-size:60px"]{font-size:30px!important;line-height:1.1!important;}
+      [style*="font-size:58px"]{font-size:28px!important;line-height:1.15!important;}
+      [style*="font-size:56px"]{font-size:28px!important;line-height:1.15!important;}
+      [style*="font-size:52px"]{font-size:26px!important;line-height:1.2!important;}
+      [style*="font-size:48px"]{font-size:24px!important;}
+      [style*="font-size:44px"]{font-size:22px!important;}
+      [style*="font-size:40px"]{font-size:22px!important;}
+      [style*="font-size:38px"]{font-size:20px!important;}
+      [style*="font-size:36px"]{font-size:20px!important;}
+
+      /* Hero sections */
+      section[style*="height:640px"]{height:auto!important;min-height:380px!important;padding-top:100px!important;padding-bottom:80px!important;}
+      section[style*="height:520px"]{height:auto!important;min-height:340px!important;padding-top:100px!important;padding-bottom:60px!important;}
+      section[style*="height:460px"]{height:auto!important;min-height:320px!important;padding-top:100px!important;padding-bottom:60px!important;}
+      section[style*="height:400px"]{height:auto!important;min-height:280px!important;padding-top:100px!important;padding-bottom:48px!important;}
+      section[style*="height:380px"]{height:auto!important;min-height:260px!important;padding-top:100px!important;padding-bottom:48px!important;}
+
+      /* Proc panels */
+      .proc-panel{height:240px!important;}
+
+      /* Sidebar widths */
+      div[style*="width:320px"]{width:100%!important;}
+      div[style*="width:300px"]{width:100%!important;}
+
+      /* Stats/gold strip */
+      [style*="background:#B8965A"]>div{flex-wrap:wrap!important;}
+      [style*="background:#B8965A"]>div>div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.2)!important;padding:16px 12px!important;}
+
+      /* Dark stats panels with flex children */
+      div[style*="background:#2A0D15"]>div[style*="display:flex"]{flex-wrap:wrap!important;}
+
+      /* Why cards grid */
+      .why-grid{grid-template-columns:1fr!important;}
+
+      /* Timeline */
+      .timeline-entry{grid-template-columns:1fr!important;}
+      .timeline-left{text-align:left!important;padding-right:0!important;padding-left:28px!important;}
+      .timeline-right{padding-left:28px!important;}
+      .timeline-line{left:8px!important;}
+      .timeline-dot{left:8px!important;}
+
+      /* Testimonials */
+      .testi-grid{grid-template-columns:1fr!important;}
+      .testi-inner{padding:32px 24px!important;}
+
+      /* Footer */
+      footer>div>div.flex{flex-direction:column!important;gap:20px!important;}
+      footer [style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:16px!important;}
+
+      /* Forms */
+      form [style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:0!important;}
+      .form-field{width:100%!important;}
+
+      /* Step items */
+      .step-item{padding-left:52px!important;}
+
+      /* Tip cards */
+      .tip-card{padding:28px 24px!important;}
+
+      /* Info boxes */
+      .info-box{padding:18px 16px!important;}
+
+      /* Accordion */
+      .accordion-btn{padding:18px 16px!important;}
+
+      /* health-tips.html specific */
+      [style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr!important;gap:16px!important;}
+      [style*="grid-template-columns:1fr 1fr 1fr"]{grid-template-columns:1fr!important;gap:16px!important;}
+      [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;gap:20px!important;}
+      [style*="display:grid"][style*="repeat(2"]{grid-template-columns:1fr!important;gap:20px!important;}
+      [style*="padding:60px 60px"]{padding:40px 20px!important;}
+
+      /* Flex layouts: stack image+text side-by-side sections */
+      div[style*="display:flex"][style*="gap:64px"]{flex-direction:column!important;gap:28px!important;}
+      div[style*="width:360px"]{width:100%!important;}
+      div[style*="width:380px"]{width:100%!important;}
+
+      /* Accordion panel containers on mobile */
+      div[style*="padding:40px"]{padding:24px 18px!important;}
+
+      /* Important note box */
+      div[style*="padding:28px 36px"]{padding:20px 18px!important;}
+      div[style*="padding:28px 36px"] div[style*="display:flex"]{flex-direction:row!important;}
+
+      /* Footer stacking */
+      footer{flex-direction:column!important;gap:20px!important;padding:32px 20px!important;text-align:center!important;}
+
+      /* CTA sections padding */
+      section[style*="padding:72px 60px"]{padding:48px 20px!important;}
+
+      /* Padding overrides for 88px sections */
+      section[style*="padding:88px 0"]{padding:48px 0!important;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- MENU OVERLAY -->
+<div id="menu-overlay">
+  <button onclick="closeMenu()" style="position:absolute;top:32px;right:48px;font-size:28px;color:rgba(255,255,255,0.6);background:none;border:none;cursor:pointer;font-weight:300;">&#x2715;</button>
+  <div style="text-align:center;margin-bottom:24px;">
+    <div style="font-size:8px;font-weight:500;letter-spacing:0.35em;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-bottom:20px;">DR. VAISHALI JOSHI &middot; KOKILABEN DHIRUBHAI AMBANI HOSPITAL</div>
+    <a href="index.html" class="menu-link">Home</a>
+    <a href="about.html" class="menu-link">About</a>
+    <a href="obstetrics.html" class="menu-link">Obstetrics</a>
+    <a href="gynaecology.html" class="menu-link">Gynaecology</a>
+    <a href="laparoscopic.html" class="menu-link">Laparoscopic Surgery</a>
+    <a href="patient-info.html" class="menu-link">Patient Information</a>
+    <a href="health-tips.html" class="menu-link active">Health Tips</a>
+    <a href="testimonials.html" class="menu-link">Testimonials</a>
+    <a href="consultation.html" class="menu-link">Book Consultation</a>
+  </div>
+  <div style="margin-top:40px;text-align:center;">
+    <a href="tel:+912242696969" style="font-size:20px;font-weight:500;color:#fff;text-decoration:none;">+91 22 4269 6969</a>
+    <div style="font-size:8px;letter-spacing:0.2em;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-top:6px;">Book a Consultation</div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 48px;">
+    <a href="index.html" style="text-decoration:none;">
+      <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.26em;color:#fff;text-transform:uppercase;line-height:1.3;">DR. VAISHALI JOSHI</div>
+      <div style="font-size:7px;font-weight:300;letter-spacing:0.22em;color:rgba(255,255,255,0.65);text-transform:uppercase;margin-top:2px;">FRCOG · CCT · MD · DNB · DGO · FCPS</div>
+    </a>
+    <nav style="display:flex;gap:28px;align-items:center;">
+      <a href="index.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-transform:uppercase;text-decoration:none;transition:color 0.2s;">Home</a>
+      <a href="about.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-transform:uppercase;text-decoration:none;transition:color 0.2s;">About</a>
+      <a href="obstetrics.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-transform:uppercase;text-decoration:none;transition:color 0.2s;">Obstetrics</a>
+      <a href="gynaecology.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-transform:uppercase;text-decoration:none;transition:color 0.2s;">Gynaecology</a>
+      <a href="laparoscopic.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-transform:uppercase;text-decoration:none;transition:color 0.2s;">Laparoscopic Surgery</a>
+      <a href="patient-info.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-transform:uppercase;text-decoration:none;transition:color 0.2s;">Patient Information</a>
+      <a href="health-tips.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:#fff;text-transform:uppercase;text-decoration:none;transition:color 0.2s;" class="nav-active">Health Tips</a>
+      <a href="testimonials.html" style="font-size:8px;font-weight:400;letter-spacing:0.18em;color:rgba(255,255,255,0.75);text-transform:uppercase;text-decoration:none;transition:color 0.2s;">Testimonials</a>
+      <a href="consultation.html" class="btn-gold" style="font-size:7px;padding:10px 20px;">Book Consultation</a>
+    </nav>
+    <button onclick="openMenu()" style="background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;" id="hamburger">
+      <span style="display:block;width:22px;height:1px;background:#fff;"></span>
+      <span style="display:block;width:22px;height:1px;background:#fff;"></span>
+      <span style="display:block;width:14px;height:1px;background:#fff;"></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative" style="height:460px;overflow:hidden;">
+  <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1440&h=460&fit=crop&crop=center&auto=format"
+       onerror="this.style.opacity='0'"
+       alt="Women's Health Tips" class="w-full h-full object-cover">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(35,8,16,0.72) 0%,rgba(35,8,16,0.52) 100%);"></div>
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center" style="padding-top:80px;">
+    <div style="font-size:9px;font-weight:500;letter-spacing:0.32em;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-bottom:16px;" data-anim="up">Dr. Vaishali Joshi &middot; Kokilaben Dhirubhai Ambani Hospital</div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:58px;font-weight:300;color:#fff;line-height:1.1;margin-bottom:16px;" data-anim="up" class="d1">Women's Health Guidance</h1>
+    <div style="width:40px;height:1px;background:rgba(255,255,255,0.5);margin:0 auto 20px;" data-anim="fade" class="d2"></div>
+    <p style="font-size:14px;font-weight:300;color:rgba(255,255,255,0.82);max-width:580px;letter-spacing:0.04em;line-height:1.8;" data-anim="up" class="d3">Expert guidance on pregnancy care, managing gynaecological conditions, recognising warning signs, and maintaining long-term women's health &mdash; from Dr. Joshi for her patients.</p>
+  </div>
+</section>
+
+<!-- ===== SECTION 1: BEFORE YOUR APPOINTMENT ===== -->
+<section id="before-appointment" style="padding:88px 0;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 60px;">
+
+    <div style="display:flex;align-items:flex-start;gap:64px;">
+      <div style="flex:1;">
+        <div class="section-label" data-anim="left">Section 01</div>
+        <div class="divider" style="margin:12px 0 24px;" data-anim="fade"></div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:#2A0D15;line-height:1.15;margin-bottom:16px;" data-anim="left" class="d1">Preparing for<br>Your Appointment</h2>
+        <p style="font-size:13px;font-weight:300;color:#666;line-height:1.9;max-width:520px;" data-anim="left" class="d2">Being well-prepared for your consultation or procedure helps Dr. Joshi give you the most accurate assessment and the best possible care. These tips apply whether you are attending for obstetrics, gynaecology, or surgery.</p>
+      </div>
+      <div style="width:360px;flex-shrink:0;" data-anim="right">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=720&h=480&fit=crop&crop=center&auto=format"
+             onerror="this.style.opacity='0'"
+             alt="Medical consultation" style="width:100%;height:260px;object-fit:cover;display:block;">
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px;">
+      <div class="tip-card" data-anim="up">
+        <div class="tip-number">01</div>
+        <div class="tip-title">Medical History &amp; Medications</div>
+        <div class="tip-body">Bring a list of all current medications — including supplements, vitamins, and herbal remedies. Note any previous surgeries, hospitalisations, allergies, and relevant family history of gynaecological or genetic conditions.</div>
+      </div>
+      <div class="tip-card" data-anim="up" class="d1">
+        <div class="tip-number">02</div>
+        <div class="tip-title">Menstrual &amp; Smear Records</div>
+        <div class="tip-body">Record the dates of your last three periods, cycle length, and any symptoms. Bring previous smear test results, colposcopy reports, or biopsy letters if you have them. If your smear is overdue, consider arranging this before your appointment.</div>
+      </div>
+      <div class="tip-card" data-anim="up" class="d2">
+        <div class="tip-number">03</div>
+        <div class="tip-title">Fertility &amp; Pre-conception</div>
+        <div class="tip-body">If attending for fertility or pre-conception advice, note how long you have been trying to conceive and any previous pregnancy outcomes. Both partners attending the first appointment is ideal. Bring previous semen analysis results if available.</div>
+      </div>
+      <div class="tip-card" data-anim="up">
+        <div class="tip-number">04</div>
+        <div class="tip-title">Pre-operative Preparation</div>
+        <div class="tip-body">If scheduled for laparoscopic or hysteroscopic surgery, fast from midnight the night before as instructed. Arrange transport — you cannot drive after general anaesthesia. Wear loose, comfortable clothing and leave jewellery at home.</div>
+      </div>
+      <div class="tip-card" data-anim="up" class="d1">
+        <div class="tip-number">05</div>
+        <div class="tip-title">Pregnancy Appointments</div>
+        <div class="tip-body">Bring your pregnancy notes, scan reports, and blood test results to every appointment. Note any new symptoms — particularly changes in fetal movements, headaches, swelling, bleeding, or discharge — since your last visit.</div>
+      </div>
+      <div class="tip-card" data-anim="up" class="d2">
+        <div class="tip-number">06</div>
+        <div class="tip-title">After Your Consultation</div>
+        <div class="tip-body">You will receive a consultation summary letter. If investigations are requested, ensure you understand how to obtain results. Contact Dr. Joshi's team promptly if your symptoms change or worsen before your next scheduled appointment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div style="height:1px;background:linear-gradient(to right,transparent,#EDD8DC,transparent);max-width:1100px;margin:0 auto;"></div>
+
+<!-- ===== SECTION 2: WARNING SIGNS ===== -->
+<section id="warning-signs" style="padding:88px 0;background:#fff;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 60px;">
+
+    <div style="text-align:center;margin-bottom:56px;">
+      <div class="section-label" style="display:inline-block;" data-anim="up">Section 02</div>
+      <div class="divider" style="margin:12px auto 24px;" data-anim="fade"></div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:#2A0D15;line-height:1.15;" data-anim="up" class="d1">Warning Signs &amp; When to Act Urgently</h2>
+      <p style="font-size:13px;font-weight:300;color:#666;max-width:580px;margin:16px auto 0;line-height:1.9;" data-anim="up" class="d2">Knowing which symptoms require immediate attention could save your life or your baby's. Never hesitate to contact Dr. Joshi's team if you are concerned — it is always better to be assessed.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+
+      <!-- Left: Pregnancy warning timeline -->
+      <div>
+        <div style="font-size:10px;font-weight:600;letter-spacing:0.2em;color:#9E6B72;text-transform:uppercase;margin-bottom:28px;" data-anim="left">Warning Signs in Pregnancy</div>
+        <div style="position:relative;">
+          <div style="position:absolute;left:23px;top:48px;bottom:36px;width:1px;background:#EDD8DC;"></div>
+          <div class="timeline-item" data-anim="left">
+            <div class="timeline-dot">1</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.15em;color:#6B1E2E;text-transform:uppercase;margin-bottom:6px;">First Trimester</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Severe vomiting, heavy vaginal bleeding, or severe one-sided pelvic pain may indicate miscarriage or ectopic pregnancy. Seek urgent assessment — an ectopic pregnancy is a surgical emergency.</div>
+            </div>
+          </div>
+          <div class="timeline-item" data-anim="left" class="d1">
+            <div class="timeline-dot">2</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.15em;color:#6B1E2E;text-transform:uppercase;margin-bottom:6px;">Second Trimester</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Reduced or absent fetal movements, persistent headache, significant facial or hand swelling, leaking fluid, or cervical pressure require prompt assessment. Do not wait for a scheduled appointment.</div>
+            </div>
+          </div>
+          <div class="timeline-item" data-anim="left" class="d2">
+            <div class="timeline-dot">3</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.15em;color:#6B1E2E;text-transform:uppercase;margin-bottom:6px;">Third Trimester</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Sudden severe headache, visual disturbances, or significant oedema may indicate pre-eclampsia. Any reduction in fetal movements, regular contractions before 37 weeks, or heavy bleeding requires immediate attention.</div>
+            </div>
+          </div>
+          <div class="timeline-item" data-anim="left" class="d3">
+            <div class="timeline-dot">4</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.15em;color:#6B1E2E;text-transform:uppercase;margin-bottom:6px;">Post-delivery</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Heavy blood loss (soaking more than one pad per hour), high fever, severe perineal pain, or persistent low mood or anxiety after delivery require assessment. Postnatal depression is treatable — do not suffer in silence.</div>
+            </div>
+          </div>
+          <div class="timeline-item" data-anim="left" class="d4" style="margin-bottom:0;">
+            <div class="timeline-dot" style="background:#B8965A;">✓</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.15em;color:#B8965A;text-transform:uppercase;margin-bottom:6px;">When in Doubt</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Dr. Joshi's team at Kokilaben Dhirubhai Ambani Hospital can be reached on <strong>+91 22 4269 6969</strong>. If you are in any doubt about a symptom, call rather than wait. No concern is too small during pregnancy.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Urgent gynaecological symptoms + dos/don'ts -->
+      <div data-anim="right">
+        <div style="font-size:10px;font-weight:600;letter-spacing:0.2em;color:#9E6B72;text-transform:uppercase;margin-bottom:28px;">Urgent Gynaecological Symptoms</div>
+        <div style="background:#fff;border:1px solid #EDD8DC;border-left:4px solid #c53030;padding:28px 28px 16px;margin-bottom:24px;">
+          <div style="font-size:12px;font-weight:600;color:#c53030;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Contact Dr. Joshi's Team Immediately If You Have:</div>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:10px;line-height:1.7;"><span style="color:#c53030;font-weight:700;flex-shrink:0;">&#9658;</span> Sudden severe pelvic or abdominal pain — possible ectopic pregnancy or ovarian torsion (emergency)</li>
+            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:10px;line-height:1.7;"><span style="color:#c53030;font-weight:700;flex-shrink:0;">&#9658;</span> Heavy vaginal bleeding soaking more than one pad per hour</li>
+            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:10px;line-height:1.7;"><span style="color:#c53030;font-weight:700;flex-shrink:0;">&#9658;</span> High fever (above 38.5&deg;C) with pelvic pain — possible pelvic infection</li>
+            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:10px;line-height:1.7;"><span style="color:#c53030;font-weight:700;flex-shrink:0;">&#9658;</span> Post-operative fever, wound redness, or discharge after gynaecological surgery</li>
+            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:10px;line-height:1.7;"><span style="color:#c53030;font-weight:700;flex-shrink:0;">&#9658;</span> Sudden severe pain or collapse at any stage of pregnancy</li>
+          </ul>
+        </div>
+        <div style="background:#F5EEF0;padding:28px;border:1px solid #EDD8DC;">
+          <div style="font-size:10px;font-weight:600;letter-spacing:0.2em;color:#9E6B72;text-transform:uppercase;margin-bottom:16px;">Symptoms That Need a Prompt (Non-Emergency) Appointment</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.15em;color:#6B1E2E;text-transform:uppercase;margin-bottom:12px;">Arrange Soon</div>
+              <ul class="checklist" style="list-style:none;padding:0;margin:0;">
+                <li>New irregular or absent periods</li>
+                <li>Abnormal smear result received</li>
+                <li>Pelvic pain not improving</li>
+                <li>Difficulty conceiving after 12 months</li>
+                <li>Vaginal lump or change noticed</li>
+              </ul>
+            </div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.15em;color:#2A0D15;text-transform:uppercase;margin-bottom:12px;">Don't Delay If</div>
+              <ul style="list-style:none;padding:0;margin:0;">
+                <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:12px;line-height:1.7;"><span style="color:#6B1E2E;font-weight:700;flex-shrink:0;">&#9658;</span> Post-menopausal bleeding of any amount</li>
+                <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:12px;line-height:1.7;"><span style="color:#6B1E2E;font-weight:700;flex-shrink:0;">&#9658;</span> New pelvic mass found on self-examination</li>
+                <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:12px;line-height:1.7;"><span style="color:#6B1E2E;font-weight:700;flex-shrink:0;">&#9658;</span> Persistent abnormal discharge with odour</li>
+                <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:300;color:#444;margin-bottom:12px;line-height:1.7;"><span style="color:#6B1E2E;font-weight:700;flex-shrink:0;">&#9658;</span> Smear or colposcopy overdue by more than a year</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div style="height:1px;background:linear-gradient(to right,transparent,#EDD8DC,transparent);max-width:1100px;margin:0 auto;"></div>
+
+<!-- ===== SECTION 3: MANAGING YOUR CONDITION ===== -->
+<section id="managing-conditions" style="padding:88px 0;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 60px;">
+
+    <div style="text-align:center;margin-bottom:56px;">
+      <div class="section-label" style="display:inline-block;" data-anim="up">Section 03</div>
+      <div class="divider" style="margin:12px auto 24px;" data-anim="fade"></div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:#2A0D15;" data-anim="up" class="d1">Managing Your Condition</h2>
+      <p style="font-size:13px;font-weight:300;color:#666;max-width:560px;margin:16px auto 0;line-height:1.9;" data-anim="up" class="d2">Practical guidance on managing the most common gynaecological and obstetric conditions that Dr. Joshi's patients bring to her clinic.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:48px;">
+
+      <!-- Left accordion: Obstetrics & High Risk Pregnancy -->
+      <div style="background:#fff;border:1px solid #EDD8DC;padding:40px;" data-anim="left">
+        <div style="font-size:10px;font-weight:600;letter-spacing:0.22em;color:#9E6B72;text-transform:uppercase;margin-bottom:20px;">Obstetrics &amp; High Risk Pregnancy</div>
+        <div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Managing Gestational Diabetes</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Gestational diabetes is managed through dietary modification, regular blood sugar monitoring, and — when required — medication. A low glycaemic index diet with controlled carbohydrate portions is the cornerstone of management. Most cases resolve completely after delivery. Your baby will be monitored for hypoglycaemia after birth.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Pre-eclampsia &amp; Hypertension</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Regular blood pressure monitoring, urinalysis for protein, and fetal wellbeing assessment are essential for pre-eclampsia management. Hospital admission may be required if blood pressure is not well controlled. Low-dose aspirin from 12 weeks is recommended for women at high risk of pre-eclampsia.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Fetal Movement Monitoring</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Begin counting fetal movements from 28 weeks. Your baby should have a consistent pattern of movement each day. If you notice a reduction or change in movements, contact Dr. Joshi's team immediately — do not wait until your next appointment, and do not rely on home dopplers to reassure yourself.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Rhesus Negative &amp; Anti-D</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              All Rhesus D negative women require Anti-D immunoglobulin injections during pregnancy and after delivery to prevent alloimmunisation, which can affect future pregnancies. Anti-D is given routinely at 28 weeks and again after delivery if the baby is Rhesus D positive.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Preparing for Natural Birth</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Attend antenatal classes and discuss your birth preferences with Dr. Joshi in advance. Staying mobile and upright during early labour encourages optimal fetal positioning. Keep an open mind about pain relief — the safest and most comfortable birth for you and your baby is always the priority.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right accordion: Gynaecological Conditions -->
+      <div style="background:#fff;border:1px solid #EDD8DC;padding:40px;" data-anim="right">
+        <div style="font-size:10px;font-weight:600;letter-spacing:0.22em;color:#9E6B72;text-transform:uppercase;margin-bottom:20px;">Gynaecological Conditions</div>
+        <div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Living with PCOS</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Lifestyle modification — particularly weight management and regular exercise — is the single most effective intervention for PCOS. Even a 5–10% weight reduction can restore ovulation and improve hormonal balance. The combined oral contraceptive pill regulates periods; Metformin improves insulin resistance; surgical ovarian drilling can restore fertility when medication fails.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Endometriosis &amp; Chronic Pelvic Pain</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Endometriosis is a long-term condition requiring ongoing management. Pain management, hormonal suppression (combined pill, progesterone, GnRH analogues), and surgery are all options. Laparoscopic excision of endometriosis deposits offers better long-term outcomes than ablation, particularly for deep disease. Dr. Joshi's European Diploma in Gynaecological Endoscopy covers advanced endometriosis surgery.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">After Colposcopy or Cervical Treatment</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Mild spotting and a dark brown discharge are normal for up to 4 weeks after colposcopy treatment (LLETZ/LEEP or cold coagulation). Avoid intercourse, tampons, and swimming during this period. Attend your follow-up smear at the interval specified in your letter — this confirms the treatment was successful.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Menopause Symptom Management</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Hormone replacement therapy (HRT) is the most effective treatment for menopausal symptoms and is safe for the majority of women. Modern preparations use body-identical hormones with an excellent safety profile. Non-hormonal options include SSRIs, cognitive behavioural therapy, and lifestyle modification. Dr. Joshi's Menopause Clinic provides a personalised, evidence-based approach.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" onclick="toggleAccordion(this)">
+              <span class="accordion-title">Uterine Fibroids</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Most fibroids are asymptomatic and do not require treatment — regular monitoring with ultrasound is appropriate. Symptomatic fibroids causing heavy periods, pelvic pressure, or pain may be treated medically (tranexamic acid, progesterone, GnRH analogues) or surgically. Dr. Joshi performs both laparoscopic myomectomy (fibroid removal preserving the uterus) and hysteroscopic fibroid resection (TCRF) for submucosal fibroids.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Important note -->
+    <div style="background:#F5EEF0;border:1px solid #EDD8DC;border-left:4px solid #6B1E2E;padding:28px 36px;" data-anim="up">
+      <div style="display:flex;gap:20px;align-items:flex-start;">
+        <div style="font-size:28px;line-height:1;flex-shrink:0;color:#6B1E2E;">&#9432;</div>
+        <div>
+          <div style="font-size:11px;font-weight:600;letter-spacing:0.15em;color:#6B1E2E;text-transform:uppercase;margin-bottom:8px;">Important Reminder</div>
+          <p style="font-size:13px;font-weight:300;color:#444;line-height:1.85;margin:0;">The guidance above is provided as general health information and does not constitute individual medical advice. Every patient's circumstances are different. If you have concerns about any symptom or condition, Dr. Joshi's team will be happy to discuss your individual situation at a consultation. Contact Kokilaben Dhirubhai Ambani Hospital on <strong>+91 22 4269 6969</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div style="height:1px;background:linear-gradient(to right,transparent,#EDD8DC,transparent);max-width:1100px;margin:0 auto;"></div>
+
+<!-- ===== SECTION 4: LONG-TERM WOMEN'S HEALTH ===== -->
+<section id="long-term-health" style="padding:88px 0;background:#fff;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 60px;">
+
+    <div style="display:flex;align-items:flex-start;gap:64px;">
+
+      <div style="width:380px;flex-shrink:0;" data-anim="left">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=760&h=560&fit=crop&crop=center&auto=format"
+             onerror="this.style.opacity='0'"
+             alt="Long-term women's health" style="width:100%;height:300px;object-fit:cover;display:block;margin-bottom:24px;">
+        <div style="background:#2A0D15;padding:32px;">
+          <div style="font-size:9px;font-weight:600;letter-spacing:0.22em;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-bottom:16px;">Regular Screening</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:#fff;line-height:1.4;margin-bottom:20px;">Preventive care is always better than treatment. These are the key screenings every woman should attend.</div>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:12px;font-weight:300;color:rgba(255,255,255,0.7);margin-bottom:10px;line-height:1.6;"><span style="color:#C4848E;flex-shrink:0;font-weight:600;">&#9658;</span> Cervical smear every 3–5 years (BSCCP accredited)</li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:12px;font-weight:300;color:rgba(255,255,255,0.7);margin-bottom:10px;line-height:1.6;"><span style="color:#C4848E;flex-shrink:0;font-weight:600;">&#9658;</span> Mammogram from age 40–50 depending on risk</li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:12px;font-weight:300;color:rgba(255,255,255,0.7);margin-bottom:10px;line-height:1.6;"><span style="color:#C4848E;flex-shrink:0;font-weight:600;">&#9658;</span> Bone density (DEXA) scan from menopause onset</li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:12px;font-weight:300;color:rgba(255,255,255,0.7);margin-bottom:10px;line-height:1.6;"><span style="color:#C4848E;flex-shrink:0;font-weight:600;">&#9658;</span> Annual blood pressure and weight check</li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:12px;font-weight:300;color:rgba(255,255,255,0.7);margin-bottom:10px;line-height:1.6;"><span style="color:#C4848E;flex-shrink:0;font-weight:600;">&#9658;</span> Thyroid function if symptomatic or family history</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="flex:1;" data-anim="right">
+        <div class="section-label" style="margin-bottom:12px;">Section 04</div>
+        <div class="divider" style="margin-bottom:24px;margin-left:0;"></div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:#2A0D15;line-height:1.15;margin-bottom:16px;">Long-term Women's Health</h2>
+        <p style="font-size:13px;font-weight:300;color:#666;line-height:1.9;margin-bottom:32px;">Small, consistent healthy habits have a profound cumulative effect on women's health across all life stages. Dr. Joshi's evidence-based recommendations for lifelong wellbeing:</p>
+
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="border-bottom:1px solid #EDD8DC;padding:20px 0;display:flex;gap:20px;align-items:flex-start;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#EDD8DC;line-height:1;flex-shrink:0;width:44px;">01</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6B1E2E;margin-bottom:6px;">Healthy Weight &amp; Exercise</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Maintaining a healthy BMI reduces the risk of PCOS, endometrial cancer, and obstetric complications. Aim for 150 minutes of moderate activity per week — exercise improves bone density, cardiovascular health, and mood.</div>
+            </div>
+          </div>
+          <div style="border-bottom:1px solid #EDD8DC;padding:20px 0;display:flex;gap:20px;align-items:flex-start;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#EDD8DC;line-height:1;flex-shrink:0;width:44px;">02</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6B1E2E;margin-bottom:6px;">Attend Your Smear Tests</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Cervical screening is the most effective preventive measure against cervical cancer. Dr. Joshi is BSCCP accredited for colposcopy. An abnormal smear result does not mean cancer — it means closer examination is warranted.</div>
+            </div>
+          </div>
+          <div style="border-bottom:1px solid #EDD8DC;padding:20px 0;display:flex;gap:20px;align-items:flex-start;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#EDD8DC;line-height:1;flex-shrink:0;width:44px;">03</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6B1E2E;margin-bottom:6px;">Know Your Family History</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">A strong family history of ovarian, breast, or bowel cancer may warrant genetic counselling and earlier or more frequent screening. BRCA1/2 gene mutations significantly increase lifetime ovarian and breast cancer risk.</div>
+            </div>
+          </div>
+          <div style="border-bottom:1px solid #EDD8DC;padding:20px 0;display:flex;gap:20px;align-items:flex-start;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#EDD8DC;line-height:1;flex-shrink:0;width:44px;">04</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6B1E2E;margin-bottom:6px;">Seek Help Early</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Gynaecological conditions — including cancers — are most successfully treated when identified early. Do not dismiss persistent symptoms such as irregular bleeding, pelvic pain, or abdominal bloating as "normal". Early investigation is always better.</div>
+            </div>
+          </div>
+          <div style="padding:20px 0;display:flex;gap:20px;align-items:flex-start;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#EDD8DC;line-height:1;flex-shrink:0;width:44px;">05</div>
+            <div>
+              <div style="font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6B1E2E;margin-bottom:6px;">Bone Health After Menopause</div>
+              <div style="font-size:13px;font-weight:300;color:#555;line-height:1.8;">Oestrogen protects bone density. After menopause, bone loss accelerates significantly. HRT, weight-bearing exercise, calcium, and vitamin D all help protect against osteoporosis. Discuss bone health as part of your menopause review with Dr. Joshi.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section style="background:#6B1E2E;padding:72px 60px;text-align:center;">
+  <h3 data-anim="up" style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:#fff;letter-spacing:0.03em;margin:0 0 16px;">Book a Consultation with Dr. Joshi</h3>
+  <p data-anim="up" class="d1" style="font-size:13px;font-weight:300;color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 32px;line-height:1.85;">For personalised advice on any of the topics covered in this guide, contact Dr. Joshi's team at Kokilaben Dhirubhai Ambani Hospital.</p>
+  <div data-anim="up" class="d2" style="display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap;">
+    <a href="consultation.html" style="background:#fff;color:#6B1E2E;font-size:9px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;padding:14px 36px;display:inline-block;text-decoration:none;transition:background 0.2s,color 0.2s;">Book Now</a>
+    <a href="tel:+912242696969" style="font-size:11px;font-weight:300;color:rgba(255,255,255,0.75);text-decoration:none;letter-spacing:0.08em;">+91 22 4269 6969</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#FDFAF6; padding:40px 60px; border-top:1px solid #EDD8DC; display:flex; justify-content:space-between; align-items:center;">
+  <div>
+    <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:12px; letter-spacing:0.22em; color:#1A1A1A; text-transform:uppercase;">DR. VAISHALI JOSHI</div>
+    <div style="font-size:8px; color:#9E6B72; letter-spacing:0.2em; text-transform:uppercase; margin-top:4px;">Senior Consultant Obstetrician &amp; Gynaecologist &middot; Kokilaben Dhirubhai Ambani Hospital, Mumbai</div>
+    <div style="font-size:8px; color:#9E6B72; letter-spacing:0.15em; text-transform:uppercase; margin-top:4px;">FRCOG (UK) &middot; CCT (UK) &middot; MD &middot; DNB &middot; DGO &middot; FCPS</div>
+  </div>
+  <div style="font-size:9px; font-weight:300; color:#aaa;">&copy; 2025 Dr. Vaishali Joshi. All Rights Reserved.</div>
+</footer>
+
+<script>
+function openMenu(){document.getElementById('menu-overlay').classList.add('open');document.body.style.overflow='hidden';}
+function closeMenu(){document.getElementById('menu-overlay').classList.remove('open');document.body.style.overflow='';}
+
+const header=document.getElementById('site-header');
+window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+
+const _obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');_obs.unobserve(e.target);}}),{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('[data-anim]').forEach(el=>_obs.observe(el));
+
+function toggleAccordion(btn){
+  const body=btn.nextElementSibling;
+  const icon=btn.querySelector('.accordion-icon');
+  const isOpen=body.classList.contains('open');
+  // close all others in same container
+  const container=btn.closest('div[style*="padding:40px"]');
+  if(container){
+    container.querySelectorAll('.accordion-body.open').forEach(b=>{b.classList.remove('open');});
+    container.querySelectorAll('.accordion-icon.open').forEach(i=>{i.classList.remove('open');});
+  }
+  if(!isOpen){body.classList.add('open');icon.classList.add('open');}
+}
+
+</script>
+</body>
+</html>
