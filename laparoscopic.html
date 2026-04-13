@@ -120,7 +120,9 @@
       div[style*="width:320px"]{width:100%!important;}
       div[style*="width:300px"]{width:100%!important;}
 
-      /* Stats/gold strip */
+      /* Stats/burgundy strip (formerly gold #B8965A, now #541727) */
+      [style*="background:#541727"]>div{flex-wrap:wrap!important;}
+      [style*="background:#541727"]>div>div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.2)!important;padding:16px 12px!important;}
       [style*="background:#B8965A"]>div{flex-wrap:wrap!important;}
       [style*="background:#B8965A"]>div>div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.2)!important;padding:16px 12px!important;}
 
@@ -177,8 +179,30 @@
       /* laparoscopic.html specific */
       .step-item:before{left:0!important;}
 
-      /* Name banner padding */
-      div[style*="padding:13px 60px"]{padding:13px 20px!important;}
+      /* Name banner: tighter padding, smaller text, reduced letter-spacing */
+      div[style*="padding:13px 60px"]{padding:11px 14px!important;}
+      .name-banner{padding:11px 14px!important;}
+      .name-banner-text{font-size:7px!important;letter-spacing:0.14em!important;line-height:1.4!important;display:inline-block!important;}
+
+      /* Hero overlay padding:0 40px -> 0 20px */
+      section > div[style*="padding:0 40px"]{padding:0 20px!important;}
+
+      /* Hero headline and intro paragraph scaling on mobile */
+      section[style*="height:520px"] h1{font-size:28px!important;line-height:1.18!important;margin:0 0 16px!important;}
+      section[style*="height:520px"] p{font-size:12px!important;}
+      section[style*="height:520px"] > div > div:first-child{font-size:8px!important;letter-spacing:0.22em!important;margin-bottom:14px!important;}
+
+      /* Top overview grid: stack sidebar below content, reduce gap */
+      section[style*="padding:72px 60px"][style*="max-width:1200px"] > div[style*="grid-template-columns:1fr 320px"]{grid-template-columns:1fr!important;gap:24px!important;}
+
+      /* Flex layouts with large gaps at top sections */
+      div[style*="gap:80px"]{flex-direction:column!important;gap:24px!important;}
+      div[style*="gap:72px"]{flex-direction:column!important;gap:24px!important;}
+      div[style*="gap:64px"]{flex-direction:column!important;gap:24px!important;}
+      div[style*="gap:60px"]{gap:24px!important;}
+
+      /* Sidebar inner box: reduce heavy padding */
+      div[style*="width:320px"] > div[style*="padding:28px 24px"]{padding:20px 18px!important;}
     }
   </style>
 </head>
@@ -237,8 +261,8 @@
 </section>
 
 <!-- NAME BANNER -->
-<div style="background:#B8965A;padding:13px 60px;text-align:center;">
-  <span style="font-size:8px;font-weight:600;letter-spacing:0.3em;color:#fff;text-transform:uppercase;">LAPAROSCOPIC &amp; ROBOTIC SURGERY &middot; KOKILABEN DHIRUBHAI AMBANI HOSPITAL, MUMBAI</span>
+<div class="name-banner" style="background:#541727;padding:13px 60px;text-align:center;">
+  <span class="name-banner-text" style="font-size:8px;font-weight:600;letter-spacing:0.3em;color:#fff;text-transform:uppercase;">LAPAROSCOPIC &amp; ROBOTIC SURGERY &middot; KOKILABEN DHIRUBHAI AMBANI HOSPITAL, MUMBAI</span>
 </div>
 
 <!-- OVERVIEW + QUICK NAV -->
