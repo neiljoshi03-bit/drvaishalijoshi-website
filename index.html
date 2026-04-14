@@ -168,6 +168,14 @@
     #gallery-lightbox .lb-prev { left:24px; }
     #gallery-lightbox .lb-next { right:24px; }
 
+    .nb-role { font-size:8px; font-weight:400; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.8); line-height:1.6; }
+    .nb-role-part { display:inline; }
+    .nb-role-sep { display:inline; }
+    @media(max-width:768px){
+      .nb-role-part { display:block !important; line-height:1.7 !important; padding:2px 4px !important; }
+      .nb-role-sep { display:none !important; }
+    }
+
     /* Media cards */
     .media-card { background:#fff; border:1px solid #EDD8DC; overflow:hidden; transition:box-shadow 0.3s ease, transform 0.3s ease; text-decoration:none; display:block; }
     .media-card:hover { box-shadow:0 12px 40px rgba(107,30,46,0.12); transform:translateY(-4px); }
@@ -323,12 +331,8 @@
       /* ==== NAME BANNER (class-based) ==== */
       .name-banner{padding:26px 18px!important;}
       .name-banner > div{max-width:100%!important;}
-      .nb-title{font-size:13px!important;letter-spacing:0.22em!important;margin-bottom:14px!important;text-transform:uppercase!important;}
-      .nb-role{font-size:0!important;line-height:0!important;}
-      .nb-role::before{content:"Senior Consultant Obstetrician & Gynaecologist";display:block;font-size:8px!important;letter-spacing:0.12em!important;line-height:1.6!important;text-transform:uppercase;margin-bottom:4px;}
-      .nb-role::after{content:"Kokilaben Dhirubhai Ambani Hospital, Mumbai";display:block;font-size:8px!important;letter-spacing:0.12em!important;line-height:1.6!important;text-transform:uppercase;}
-      .nb-sep,.nb-break{display:none!important;}
-      .name-banner .nb-role>*{display:none!important;}
+      .nb-title{font-size:13px!important;letter-spacing:0.22em!important;margin-bottom:12px!important;}
+      .nb-role{font-size:8px!important;letter-spacing:0.12em!important;line-height:1.7!important;}
 
       /* ==== CREDENTIALS STRIP (class-based) ==== */
       .cred-strip{padding:14px 12px!important;}
@@ -450,7 +454,9 @@
 <div class="name-banner" style="background:#541727;padding:24px 60px;">
   <div style="max-width:1200px;margin:0 auto;text-align:center;">
     <div class="nb-title" style="font-family:'Montserrat',sans-serif;font-size:21px;font-weight:300;color:#fff;letter-spacing:0.38em;text-transform:uppercase;margin-bottom:7px;">DR. VAISHALI JOSHI</div>
-    <div class="nb-role" style="font-size:8px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.8);line-height:1.6;">Senior Consultant Obstetrician &amp; Gynaecologist <span class="nb-sep"> · </span><span class="nb-break"></span>Kokilaben Dhirubhai Ambani Hospital, Mumbai</div>
+    <div class="nb-role">
+      <span class="nb-role-part">Senior Consultant Obstetrician &amp; Gynaecologist</span><span class="nb-role-sep"> &middot; </span><span class="nb-role-part">Kokilaben Dhirubhai Ambani Hospital, Mumbai</span>
+    </div>
   </div>
 </div>
 
