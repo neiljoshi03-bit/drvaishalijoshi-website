@@ -304,7 +304,8 @@
       .profile-photo img{object-position:center 20%!important;}
 
       /* ==== HERO stats bar (class-based) ==== */
-      section[style*="height:640px"]{padding-bottom:0!important;}
+      section[style*="height:640px"]{padding-bottom:0!important;flex-direction:column!important;justify-content:flex-start!important;}
+      section[style*="height:640px"]>div[style*="position:relative"][style*="z-index:2"]{width:100%!important;}
       .hero-stats{position:static!important;bottom:auto!important;margin-top:0!important;background:rgba(42,13,21,0.92)!important;backdrop-filter:none!important;width:100%!important;}
       .hero-stats > div{flex-wrap:wrap!important;gap:0!important;padding:0!important;}
       .hero-stats > div > div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.08)!important;padding:12px 8px!important;box-sizing:border-box!important;}
