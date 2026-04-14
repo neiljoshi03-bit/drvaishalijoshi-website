@@ -126,6 +126,22 @@
     .cred-badge span { font-size:10px; font-weight:600; letter-spacing:0.18em; color:#6B1E2E; display:block; }
     .cred-badge small { font-size:8px; font-weight:300; color:#777; letter-spacing:0.06em; display:block; margin-top:2px; }
 
+    /* Gallery */
+    .gallery-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+    .gallery-item { position:relative; aspect-ratio:1/1; overflow:hidden; cursor:pointer; background:#EDD8DC; }
+    .gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; display:block; }
+    .gallery-item:hover img { transform:scale(1.05); }
+    .gallery-item::after { content:''; position:absolute; inset:0; background:rgba(42,13,21,0); transition:background 0.3s ease; }
+    .gallery-item:hover::after { background:rgba(42,13,21,0.12); }
+    #gallery-lightbox { position:fixed; inset:0; background:rgba(20,6,10,0.95); z-index:9999; display:none; align-items:center; justify-content:center; padding:40px; }
+    #gallery-lightbox.open { display:flex; }
+    #gallery-lightbox img { max-width:100%; max-height:100%; object-fit:contain; box-shadow:0 8px 60px rgba(0,0,0,0.4); }
+    #gallery-lightbox .lb-close { position:absolute; top:24px; right:32px; background:none; border:none; color:rgba(255,255,255,0.8); font-size:32px; cursor:pointer; padding:8px; }
+    #gallery-lightbox .lb-nav { position:absolute; top:50%; transform:translateY(-50%); background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); color:#fff; width:48px; height:48px; cursor:pointer; font-size:20px; transition:background 0.2s; }
+    #gallery-lightbox .lb-nav:hover { background:rgba(255,255,255,0.18); }
+    #gallery-lightbox .lb-prev { left:24px; }
+    #gallery-lightbox .lb-next { right:24px; }
+
     /* Media cards */
     .media-card { background:#fff; border:1px solid #EDD8DC; overflow:hidden; transition:box-shadow 0.3s ease, transform 0.3s ease; text-decoration:none; display:block; }
     .media-card:hover { box-shadow:0 12px 40px rgba(107,30,46,0.12); transform:translateY(-4px); }
@@ -217,6 +233,13 @@
       /* Testimonials */
       .testi-grid{grid-template-columns:1fr!important;}
       .testi-inner{padding:32px 24px!important;}
+
+      /* Gallery */
+      .gallery-grid { grid-template-columns:repeat(2,1fr)!important; gap:6px!important; }
+      #gallery-lightbox { padding:16px!important; }
+      #gallery-lightbox .lb-nav { width:40px!important; height:40px!important; }
+      #gallery-lightbox .lb-prev { left:8px!important; }
+      #gallery-lightbox .lb-next { right:8px!important; }
 
       /* Media section */
       .media-grid{grid-template-columns:1fr!important;gap:16px!important;}
@@ -819,7 +842,68 @@
   </div>
 </section>
 
+<!-- PHOTO GALLERY -->
+<section style="background:#FDFAF6;padding:88px 0;">
+  <div style="max-width:1400px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:48px;">
+      <p class="section-label" style="margin-bottom:14px;" data-anim="up">PHOTO GALLERY</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:#1A1A1A;line-height:1.15;" data-anim="up" class="d1">Conferences, Publications &amp; More</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(0)"><img src="gallery/gallery-01.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 1"></div>
+      <div class="gallery-item" onclick="openLightbox(1)"><img src="gallery/gallery-02.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 2"></div>
+      <div class="gallery-item" onclick="openLightbox(2)"><img src="gallery/gallery-03.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 3"></div>
+      <div class="gallery-item" onclick="openLightbox(3)"><img src="gallery/gallery-04.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 4"></div>
+      <div class="gallery-item" onclick="openLightbox(4)"><img src="gallery/gallery-05.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 5"></div>
+      <div class="gallery-item" onclick="openLightbox(5)"><img src="gallery/gallery-06.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 6"></div>
+      <div class="gallery-item" onclick="openLightbox(6)"><img src="gallery/gallery-07.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 7"></div>
+      <div class="gallery-item" onclick="openLightbox(7)"><img src="gallery/gallery-08.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 8"></div>
+      <div class="gallery-item" onclick="openLightbox(8)"><img src="gallery/gallery-09.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 9"></div>
+      <div class="gallery-item" onclick="openLightbox(9)"><img src="gallery/gallery-10.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 10"></div>
+      <div class="gallery-item" onclick="openLightbox(10)"><img src="gallery/gallery-11.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 11"></div>
+      <div class="gallery-item" onclick="openLightbox(11)"><img src="gallery/gallery-12.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 12"></div>
+      <div class="gallery-item" onclick="openLightbox(12)"><img src="gallery/gallery-13.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 13"></div>
+      <div class="gallery-item" onclick="openLightbox(13)"><img src="gallery/gallery-14.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 14"></div>
+      <div class="gallery-item" onclick="openLightbox(14)"><img src="gallery/gallery-15.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 15"></div>
+      <div class="gallery-item" onclick="openLightbox(15)"><img src="gallery/gallery-16.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 16"></div>
+      <div class="gallery-item" onclick="openLightbox(16)"><img src="gallery/gallery-17.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 17"></div>
+      <div class="gallery-item" onclick="openLightbox(17)"><img src="gallery/gallery-18.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 18"></div>
+      <div class="gallery-item" onclick="openLightbox(18)"><img src="gallery/gallery-19.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 19"></div>
+      <div class="gallery-item" onclick="openLightbox(19)"><img src="gallery/gallery-20.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 20"></div>
+      <div class="gallery-item" onclick="openLightbox(20)"><img src="gallery/gallery-21.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 21"></div>
+      <div class="gallery-item" onclick="openLightbox(21)"><img src="gallery/gallery-22.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 22"></div>
+      <div class="gallery-item" onclick="openLightbox(22)"><img src="gallery/gallery-23.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 23"></div>
+      <div class="gallery-item" onclick="openLightbox(23)"><img src="gallery/gallery-24.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 24"></div>
+      <div class="gallery-item" onclick="openLightbox(24)"><img src="gallery/gallery-25.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 25"></div>
+      <div class="gallery-item" onclick="openLightbox(25)"><img src="gallery/gallery-26.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 26"></div>
+      <div class="gallery-item" onclick="openLightbox(26)"><img src="gallery/gallery-27.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 27"></div>
+      <div class="gallery-item" onclick="openLightbox(27)"><img src="gallery/gallery-28.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 28"></div>
+      <div class="gallery-item" onclick="openLightbox(28)"><img src="gallery/gallery-29.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 29"></div>
+      <div class="gallery-item" onclick="openLightbox(29)"><img src="gallery/gallery-30.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 30"></div>
+      <div class="gallery-item" onclick="openLightbox(30)"><img src="gallery/gallery-31.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 31"></div>
+      <div class="gallery-item" onclick="openLightbox(31)"><img src="gallery/gallery-32.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 32"></div>
+      <div class="gallery-item" onclick="openLightbox(32)"><img src="gallery/gallery-33.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 33"></div>
+      <div class="gallery-item" onclick="openLightbox(33)"><img src="gallery/gallery-34.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 34"></div>
+      <div class="gallery-item" onclick="openLightbox(34)"><img src="gallery/gallery-35.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 35"></div>
+      <div class="gallery-item" onclick="openLightbox(35)"><img src="gallery/gallery-36.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 36"></div>
+      <div class="gallery-item" onclick="openLightbox(36)"><img src="gallery/gallery-37.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 37"></div>
+      <div class="gallery-item" onclick="openLightbox(37)"><img src="gallery/gallery-38.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 38"></div>
+      <div class="gallery-item" onclick="openLightbox(38)"><img src="gallery/gallery-39.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 39"></div>
+      <div class="gallery-item" onclick="openLightbox(39)"><img src="gallery/gallery-40.jpg" loading="lazy" alt="Dr. Vaishali Joshi — gallery photo 40"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="gallery-lightbox" onclick="if(event.target.id==='gallery-lightbox')closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" onclick="navLightbox(-1)" aria-label="Previous">&lsaquo;</button>
+  <img id="lb-img" src="" alt="">
+  <button class="lb-nav lb-next" onclick="navLightbox(1)" aria-label="Next">&rsaquo;</button>
+</div>
+
 <!-- CTA SECTION -->
+
 <section style="background:#6B1E2E;padding:72px 0;text-align:center;">
   <div style="max-width:700px;margin:0 auto;padding:0 40px;">
     <h3 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:#fff;margin-bottom:16px;" data-anim="up">Begin Your Journey to Better Health</h3>
@@ -855,6 +939,30 @@ const header=document.getElementById('site-header');
 window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
 const _obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');_obs.unobserve(e.target);}}),{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('[data-anim]').forEach(el=>_obs.observe(el));
+// Gallery lightbox
+const galleryPhotos = Array.from({length:40}, (_,i) => 'gallery/gallery-' + String(i+1).padStart(2,'0') + '.jpg');
+let lbIndex = 0;
+function openLightbox(i) {
+  lbIndex = i;
+  document.getElementById('lb-img').src = galleryPhotos[i];
+  document.getElementById('gallery-lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('gallery-lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function navLightbox(dir) {
+  lbIndex = (lbIndex + dir + galleryPhotos.length) % galleryPhotos.length;
+  document.getElementById('lb-img').src = galleryPhotos[lbIndex];
+}
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('gallery-lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navLightbox(-1);
+  if (e.key === 'ArrowRight') navLightbox(1);
+});
+
 </script>
 </body>
 </html>
