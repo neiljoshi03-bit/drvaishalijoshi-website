@@ -248,40 +248,47 @@
       /* index.html specific */
       .profile-flex{flex-direction:column!important;gap:28px!important;}
       .profile-photo{width:100%!important;height:360px!important;}
-      .profile-photo img{object-position:center 20% !important;}
+      .profile-photo img{object-position:center 20%!important;}
 
-      /* Hero: convert stats bar from absolute → static flow */
+      /* ==== HERO stats bar (class-based) ==== */
       section[style*="height:640px"]{padding-bottom:0!important;}
-      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"]{position:static!important;margin-top:24px!important;background:rgba(42,13,21,0.85)!important;backdrop-filter:none!important;}
-      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"] > div{flex-wrap:wrap!important;gap:0!important;}
-      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"] > div > div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.08)!important;padding:14px 10px!important;}
-      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"] > div > div:nth-child(even){border-left:1px solid rgba(255,255,255,0.08)!important;}
-      section[style*="height:640px"] > div[style*="position:absolute"][style*="bottom:0"] [style*="font-size:18px"]{font-size:13px!important;}
+      .hero-stats{position:static!important;bottom:auto!important;margin-top:0!important;background:rgba(42,13,21,0.92)!important;backdrop-filter:none!important;width:100%!important;}
+      .hero-stats > div{flex-wrap:wrap!important;gap:0!important;padding:0!important;}
+      .hero-stats > div > div{width:50%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.08)!important;padding:12px 8px!important;box-sizing:border-box!important;}
+      .hero-stats > div > div:nth-child(2n){border-left:1px solid rgba(255,255,255,0.08)!important;}
+      .hero-stats > div > div:nth-child(3),
+      .hero-stats > div > div:nth-child(4){border-bottom:none!important;}
+      .hero-stats [style*="font-size:18px"]{font-size:12px!important;line-height:1.3!important;}
+      .hero-stats [style*="font-size:8px"]{font-size:7px!important;letter-spacing:0.14em!important;}
 
-      /* Hero CTA buttons: stack vertically */
-      section[style*="height:640px"] .btn-gold{display:block!important;margin:0 auto 12px!important;width:100%!important;max-width:260px!important;text-align:center!important;}
-      section[style*="height:640px"] a[href*="consultation"]{display:inline-block!important;margin-top:8px!important;}
+      /* Hero content: tighter padding + stacked CTAs */
+      section[style*="height:640px"] > div[style*="z-index:2"]{padding:0 20px!important;}
+      section[style*="height:640px"] .btn-gold{display:block!important;margin:0 auto 14px!important;width:100%!important;max-width:260px!important;text-align:center!important;box-sizing:border-box!important;}
+      section[style*="height:640px"] a[href*="consultation"]{display:inline-block!important;margin-top:4px!important;margin-right:0!important;}
 
-      /* Name banner: smaller fonts, tighter spacing */
-      [style*="padding:24px 60px"]{padding:18px 14px!important;}
-      [style*="font-size:21px"][style*="letter-spacing:0.38em"]{font-size:12px!important;letter-spacing:0.18em!important;}
-      [style*="padding:24px 60px"] [style*="font-size:8px"]{font-size:7px!important;letter-spacing:0.08em!important;line-height:1.5!important;}
+      /* ==== NAME BANNER (class-based) ==== */
+      .name-banner{padding:16px 14px!important;}
+      .name-banner > div{max-width:100%!important;}
+      .name-banner > div > div:first-child{font-size:12px!important;letter-spacing:0.18em!important;margin-bottom:6px!important;}
+      .name-banner > div > div:last-child{font-size:7px!important;letter-spacing:0.08em!important;line-height:1.55!important;}
 
-      /* Credentials strip: wrap items, drop borders, compact */
-      [style*="padding:18px 60px"]{padding:16px 12px!important;}
-      [style*="padding:18px 60px"] > div{gap:10px 14px!important;}
-      [style*="padding:18px 60px"] > div > div{padding:4px 8px!important;border-right:none!important;min-width:auto!important;}
-      [style*="padding:18px 60px"] > div > div > div:first-child{font-size:7px!important;letter-spacing:0.08em!important;}
-      [style*="padding:18px 60px"] > div > div > div:last-child{font-size:7px!important;}
+      /* ==== CREDENTIALS STRIP (class-based) ==== */
+      .cred-strip{padding:14px 12px!important;}
+      .cred-strip > div{gap:8px 0!important;justify-content:center!important;}
+      .cred-strip > div > div{padding:4px 10px!important;border-right:none!important;flex:0 0 auto!important;}
+      .cred-strip > div > div > div:first-child{font-size:7px!important;letter-spacing:0.08em!important;}
+      .cred-strip > div > div > div:last-child{font-size:7px!important;margin-top:1px!important;}
 
-      /* Credential badge grid: 2 cols instead of 6 */
-      .cred-badge{padding:6px 8px!important;}
-      div[style*="grid-template-columns:repeat(6,1fr)"]{grid-template-columns:repeat(2,1fr)!important;gap:6px!important;}
+      /* Credential badges (6 → 3 cols) */
+      .cred-badge{padding:6px 4px!important;}
+      .cred-badge span{font-size:9px!important;letter-spacing:0.1em!important;}
+      .cred-badge small{font-size:6px!important;letter-spacing:0.02em!important;}
+      div[style*="grid-template-columns:repeat(6,1fr)"]{grid-template-columns:repeat(3,1fr)!important;gap:6px!important;}
 
-      /* Stats strip (burgundy): stack all 3 at full width */
-      [style*="background:#541727"]>div{flex-wrap:wrap!important;}
-      [style*="background:#541727"]>div>div{width:100%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.15)!important;padding:22px 16px!important;}
-      [style*="background:#541727"]>div>div:last-child{border-bottom:none!important;}
+      /* ==== STATS STRIP (burgundy, 3 items, stack 100%) ==== */
+      [style*="background:#541727"]>div[style*="display:flex"]{flex-wrap:wrap!important;}
+      [style*="background:#541727"]>div[style*="display:flex"]>div{width:100%!important;flex:none!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.15)!important;padding:22px 16px!important;}
+      [style*="background:#541727"]>div[style*="display:flex"]>div:last-child{border-bottom:none!important;}
     }
   </style>
 </head>
@@ -359,7 +366,7 @@
     </div>
   </div>
   <!-- Stats bar -->
-  <div style="position:absolute;bottom:0;left:0;right:0;z-index:3;background:rgba(42,13,21,0.72);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,0.08);">
+  <div class="hero-stats" style="position:absolute;bottom:0;left:0;right:0;z-index:3;background:rgba(42,13,21,0.72);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,0.08);">
     <div style="max-width:1200px;margin:0 auto;display:flex;align-items:stretch;">
       <div style="flex:1;padding:22px 28px;border-right:1px solid rgba(255,255,255,0.1);text-align:center;">
         <div style="font-size:8px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:5px;">International Training</div>
@@ -382,7 +389,7 @@
 </section>
 
 <!-- NAME BANNER -->
-<div style="background:#541727;padding:24px 60px;">
+<div class="name-banner" style="background:#541727;padding:24px 60px;">
   <div style="max-width:1200px;margin:0 auto;text-align:center;">
     <div style="font-family:'Montserrat',sans-serif;font-size:21px;font-weight:300;color:#fff;letter-spacing:0.38em;text-transform:uppercase;margin-bottom:7px;">DR. VAISHALI JOSHI</div>
     <div style="font-size:8px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.8);">SENIOR CONSULTANT OBSTETRICIAN & GYNAECOLOGIST · KOKILABEN DHIRUBHAI AMBANI HOSPITAL, MUMBAI</div>
@@ -390,7 +397,7 @@
 </div>
 
 <!-- CREDENTIALS STRIP -->
-<div style="background:#fff;border-bottom:1px solid #f0f0f0;padding:18px 60px;">
+<div class="cred-strip" style="background:#fff;border-bottom:1px solid #f0f0f0;padding:18px 60px;">
   <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;">
     <div style="padding:0 28px;border-right:1px solid #EDD8DC;text-align:center;">
       <div style="font-size:8px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6B1E2E;">Senior Consultant</div>
